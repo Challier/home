@@ -1,0 +1,69 @@
+---
+layout: default
+title: "Home"
+menu: main
+order: 1
+description: >
+  I'm Victor, and welcome to my home page!<br />
+---
+<header>
+	<h1>{{ page.description }}</h1>
+	<p>I write about Data Sciences, Python, Algorithms &amp; Data Structures. I also release my new music here! If you enjoy your read , don't forget to subscribe to my <a href="/jk_home/feed.xml" title="RSS Feed"><b>RSS feed</b></a> and follow me on <b>social media</b>. </p>
+</header>
+<section>
+    <center>
+        <ul class="icons">
+            <li><a href="https://twitter.com/victor_challier" class="icon style2 fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/Challier" class="icon style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="icon style2 fa-rss" target="_blank"><span class="label">RSS Feed</span></a></li>
+            <li><a href="https://www.linkedin.com/in/victor-challier" class="icon style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+            <!--<li><a href="https://www.quora.com/profile/Victor-Challier" class="icon style2 fa-quora"><span class="label">Quora</span></a></li>-->
+            <li><a href="https://www.reddit.com/user/algo_ponts/" class="icon style2 fa-reddit-alien" target="_blank"><span class="label">Reddit</span></a></li>
+            <li><a href="https://soundcloud.com/victor-challier/" class="icon style2 fa-soundcloud" target="_blank"><span class="label">Soundcloud</span></a></li>
+            <li><a href="https://www.hackerrank.com/challier_victor" class="icon style2 fa-code" target="_blank"><span class="label">Hackerrank</span></a></li>
+            <li><a href="mailto: {{ site.email }}" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+    </center>
+</section>
+<section>
+    <center>
+        <h4>What do you want to read about?</h4>
+        
+        <div class="button-group filter-button-group">
+            <div class="button small default xsmargin all" data-filter=".nothing">All</div>
+            {% assign categories = site.categories | sort: categories  %}
+            {% for category in categories %}
+            <div class="button small xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
+                {% if category contains 'data_sciences' %} 
+                  Data Sciences
+                {% elsif category contains 'algorithm' %} 
+                  Algorithm &amp; Data Structures
+                {% else %}
+                  {{ category | first }}
+                {% endif %}
+            </div>
+            {% endfor %}
+            <div class="button small default xsmargin all_none" data-filter=".all_none">None</div>
+        </div>
+    </center>
+</section>
+
+<section class="tiles" style='display:none'>
+
+  {% for post in site.posts limit:24 %}
+      <article class="article {{ post.class }}">
+        <span class="image">
+          <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
+        </span>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+          <h2>{{ post.title }}</h2>
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          <div class="content">
+            <p>{{ post.description }}</p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+
+</section>
+

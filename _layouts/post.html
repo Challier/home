@@ -1,0 +1,26 @@
+---
+layout: post_layout
+---
+
+<!-- Container element -->
+
+
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <div itemprop="articleBody" style="padding-left:15%; padding-right: 15%">
+    <br/>
+    <br/>
+
+
+    {{ content }}
+
+    <p style="text-align:right;">
+      <i><span itemprop="name"> Written by {{ page.author }}</span><br/> Published <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time></i>
+      <!-- {% for tag in page.tags %}
+        • <span>{{ tag }}</span>
+      {% endfor %} -->
+    </p>
+  </div>
+</article>

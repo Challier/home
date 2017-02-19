@@ -1,0 +1,9 @@
+---
+layout: about_layout
+---
+<center>
+{% if page.header-image %}
+  <span class="image left"><img src="{{ page.header-image | prepend: site.baseurl }}" alt="{{ page.alt-image }}" style="border-radius: 100%; width:70%; "></span>
+{% endif %}
+</center>
+{{ content }}

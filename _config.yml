@@ -1,0 +1,30 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Victor Challier
+description: > # this means to ignore newlines until "baseurl:"
+  This is Phantom, a simple design built around a grid of large, colorful, semi-interactive
+  image tiles (of which you can have as many or as few as you like). Makes use of some
+  SVG and animation techniques I've been experimenting with on that other project of mine
+  you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
+baseurl: "/jk_home" # the subpath of your site, e.g. /blog
+url: "https://challier.github.io/jk_home" # the base hostname & protocol for your site
+
+# Contact settings
+email: challier.victor@gmail.com
+twitter_username: victor_challier
+github_username:  challier-08
+
+# Build settings
+markdowm: kramdown
+
+kramdown:
+  input:      GFM
+  auto_ids:   false
+
+exclude: ["README.md", "LICENSE.md", "screenshot.png"]

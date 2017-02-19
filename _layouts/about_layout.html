@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	{% include head.html %}
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+<header id="header">
+  <div class="inner">
+
+    <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu" title="Menu">Menu</a></li>
+        </ul>
+      </nav>
+
+  </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+  <h2>Menu</h2>
+  <ul>
+    {% assign pages = site.pages | sort: "order"  %}
+    {% for my_page in pages %}
+      {% if my_page.menu == 'main' %}
+        {% if my_page.title %}
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner" style="width:60%;">
+
+              {{ content }}
+
+						</div>
+					</div>
+
+				{% include footer.html %}
+
+			</div>
+
+		{% include scripts.html %}
+
+	</body>
+</html>
