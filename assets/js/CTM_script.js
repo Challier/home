@@ -42,7 +42,8 @@ if ($(this).hasClass('all')) {
     if (!$( ".general" ).hasClass('on')) {
       $( ".general" ).trigger( "click" );
     }
-    if (!$( ".music" ).hasClass('on')) {$( ".music" ).trigger( "click" );}
+    if (!$( ".hackerrank" ).hasClass('on')) {
+      $( ".hackerrank" ).trigger( "click" );}
   }
 
 if ($(this).hasClass('all_none')) {
@@ -55,8 +56,8 @@ if ($(this).hasClass('all_none')) {
   if ($( ".general" ).hasClass('on')) 
     {$( ".general" ).trigger( "click" );
 }
-  if ($( ".music" ).hasClass('on')) 
-    {$( ".music" ).trigger( "click" );
+  if ($( ".hackerrank" ).hasClass('on')) 
+    {$( ".hackerrank" ).trigger( "click" );
 }
   }
 

@@ -4,7 +4,7 @@ title: "Home"
 menu: main
 order: 1
 description: >
-  I'm Victor, and welcome to my home page!<br />
+  I'm Victor, welcome to my home page!<br />
 ---
 <header>
 	<h1>{{ page.description }}</h1>
@@ -34,9 +34,7 @@ description: >
             {% assign categories = site.categories | sort: categories  %}
             {% for category in categories %}
             <div class="button small xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
-                {% if category contains 'data_sciences' %} 
-                  Data Sciences
-                {% elsif category contains 'algorithm' %} 
+                {% if category contains 'algorithm' %} 
                   Algorithm &amp; Data Structures
                 {% else %}
                   {{ category | first }}

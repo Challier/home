@@ -4,11 +4,11 @@ title:        "Test Posts 9"
 menu:		  main
 date:         2016-04-10 18:32:44 +0200
 author:       "Author"
-categories:   data_sciences
+categories:   hackerrank
 tags:         tag1 tag2
 
 # POSTS LIST
-class:       "data_sciences"                         # config bg-color to post list card (1..6)
+class:       "hackerrank"                         # config bg-color to post list card (1..6)
 list-image:  "/assets/images/NYC_square.jpg"       # config image to post list card (1..6)
 description: >                                # config description to post list card
   Sed nisl arcu euismod sit amet nisi

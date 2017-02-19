@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/home/</link>
     <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Feb 2017 22:51:00 +0100</pubDate>
-    <lastBuildDate>Sun, 19 Feb 2017 22:51:00 +0100</lastBuildDate>
+    <pubDate>Mon, 20 Feb 2017 00:10:17 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Feb 2017 00:10:17 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -52,15 +52,15 @@
 
 </description>
         <pubDate>Thu, 16 Feb 2017 16:16:44 +0100</pubDate>
-        <link>http://localhost:4000/home/data_sciences/2017/02/16/test-post-d.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2017/02/16/test-post-d.html</guid>
+        <link>http://localhost:4000/home/hackerrank/2017/02/16/test-post-d.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2017/02/16/test-post-d.html</guid>
         
         <category>tag1</category>
         
         <category>tag2</category>
         
         
-        <category>data_sciences</category>
+        <category>hackerrank</category>
         
       </item>
     
@@ -116,15 +116,15 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:32:44 +0200</pubDate>
-        <link>http://localhost:4000/home/data_sciences/2016/04/10/test-post-i.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/test-post-i.html</guid>
+        <link>http://localhost:4000/home/hackerrank/2016/04/10/test-post-i.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2016/04/10/test-post-i.html</guid>
         
         <category>tag1</category>
         
         <category>tag2</category>
         
         
-        <category>data_sciences</category>
+        <category>hackerrank</category>
         
       </item>
     
@@ -180,15 +180,15 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:27:44 +0200</pubDate>
-        <link>http://localhost:4000/home/data_sciences/2016/04/10/test-post-d.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/test-post-d.html</guid>
+        <link>http://localhost:4000/home/hackerrank/2016/04/10/test-post-d.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2016/04/10/test-post-d.html</guid>
         
         <category>tag1</category>
         
         <category>tag2</category>
         
         
-        <category>data_sciences</category>
+        <category>hackerrank</category>
         
       </item>
     
@@ -225,7 +225,7 @@
       </item>
     
       <item>
-        <title>Test Posts 1</title>
+        <title>Week of Code 29&lt;br/&gt;The Knight path</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
@@ -244,15 +244,15 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:24:44 +0200</pubDate>
-        <link>http://localhost:4000/home/data_sciences/2016/04/10/test-post-a.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/test-post-a.html</guid>
+        <link>http://localhost:4000/home/hackerrank/2016/04/10/test-post-a.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2016/04/10/test-post-a.html</guid>
         
         <category>tag1</category>
         
         <category>tag2</category>
         
         
-        <category>data_sciences</category>
+        <category>hackerrank</category>
         
       </item>
     
@@ -276,15 +276,15 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:23:44 +0200</pubDate>
-        <link>http://localhost:4000/home/data_sciences/2016/04/10/test-post.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/test-post.html</guid>
+        <link>http://localhost:4000/home/hackerrank/2016/04/10/test-post.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2016/04/10/test-post.html</guid>
         
         <category>tag1</category>
         
         <category>tag2</category>
         
         
-        <category>data_sciences</category>
+        <category>hackerrank</category>
         
       </item>
     
@@ -308,15 +308,15 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:22:44 +0200</pubDate>
-        <link>http://localhost:4000/home/data_sciences/2016/04/10/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/welcome-to-jekyll.html</guid>
+        <link>http://localhost:4000/home/hackerrank/2016/04/10/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2016/04/10/welcome-to-jekyll.html</guid>
         
         <category>tag1</category>
         
         <category>tag2</category>
         
         
-        <category>data_sciences</category>
+        <category>hackerrank</category>
         
       </item>
     

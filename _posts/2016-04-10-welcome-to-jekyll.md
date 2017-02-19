@@ -4,7 +4,7 @@ title:        "Welcome to Jekyll!"
 menu:		  main
 date:         2016-04-10 18:22:44 +0200
 author:       "Author"
-categories:   data_sciences
+categories:   hackerrank
 tags:         tag1 tag2
 
 # POSTS LIST
