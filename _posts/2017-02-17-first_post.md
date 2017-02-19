@@ -11,7 +11,7 @@ tags:         welcome first
 class:       "general"                         # config bg-color to post list card (1..6)
 list-image:  "/assets/images/emocow_square.jpg"       # config image to post list card (1..6)
 description: >                                # config description to post list card
-  It looks like it's working so far.
+  Looks like it works so far.
 
 # POST HEADER
 header-image: "/assets/images/emocow_banner.jpg"      # config image to post header
