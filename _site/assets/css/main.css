@@ -1412,7 +1412,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: #585858;
-  font-family: "Source Sans Pro", Helvetica Neue, sans-serif;
+  font-family: Helvetica Neue, sans-serif;
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.75; }
