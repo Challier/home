@@ -4,10 +4,10 @@
     <title>Victor Challier</title>
     <description>This is Phantom, a simple design built around a grid of large, colorful, semi-interactive image tiles (of which you can have as many or as few as you like). Makes use of some SVG and animation techniques I've been experimenting with on that other project of mine you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
 </description>
-    <link>http://localhost:4000/jk_home/</link>
-    <atom:link href="http://localhost:4000/jk_home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Feb 2017 05:33:31 +0100</pubDate>
-    <lastBuildDate>Sun, 19 Feb 2017 05:33:31 +0100</lastBuildDate>
+    <link>http://localhost:4000/home/</link>
+    <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 19 Feb 2017 05:47:26 +0100</pubDate>
+    <lastBuildDate>Sun, 19 Feb 2017 05:47:26 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -20,8 +20,8 @@
 
 </description>
         <pubDate>Fri, 17 Feb 2017 12:16:44 +0100</pubDate>
-        <link>http://localhost:4000/jk_home/general/2017/02/17/first_post.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/general/2017/02/17/first_post.html</guid>
+        <link>http://localhost:4000/home/general/2017/02/17/first_post.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/general/2017/02/17/first_post.html</guid>
         
         <category>welcome</category>
         
@@ -52,8 +52,8 @@
 
 </description>
         <pubDate>Thu, 16 Feb 2017 16:16:44 +0100</pubDate>
-        <link>http://localhost:4000/jk_home/data_sciences/2017/02/16/test-post-d.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/data_sciences/2017/02/16/test-post-d.html</guid>
+        <link>http://localhost:4000/home/data_sciences/2017/02/16/test-post-d.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2017/02/16/test-post-d.html</guid>
         
         <category>tag1</category>
         
@@ -84,8 +84,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:33:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/algorithm/2016/04/10/test-post-j.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/algorithm/2016/04/10/test-post-j.html</guid>
+        <link>http://localhost:4000/home/algorithm/2016/04/10/test-post-j.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/algorithm/2016/04/10/test-post-j.html</guid>
         
         <category>tag1</category>
         
@@ -116,8 +116,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:32:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/data_sciences/2016/04/10/test-post-i.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/data_sciences/2016/04/10/test-post-i.html</guid>
+        <link>http://localhost:4000/home/data_sciences/2016/04/10/test-post-i.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/test-post-i.html</guid>
         
         <category>tag1</category>
         
@@ -148,8 +148,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:31:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/music/algorithm/2016/04/10/test-post-h.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/music/algorithm/2016/04/10/test-post-h.html</guid>
+        <link>http://localhost:4000/home/music/algorithm/2016/04/10/test-post-h.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/music/algorithm/2016/04/10/test-post-h.html</guid>
         
         <category>tag1</category>
         
@@ -182,8 +182,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:30:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/music/2016/04/10/test-post-g.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/music/2016/04/10/test-post-g.html</guid>
+        <link>http://localhost:4000/home/music/2016/04/10/test-post-g.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/music/2016/04/10/test-post-g.html</guid>
         
         <category>tag1</category>
         
@@ -214,8 +214,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:28:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/algorithm/2016/04/10/test-post-e.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/algorithm/2016/04/10/test-post-e.html</guid>
+        <link>http://localhost:4000/home/algorithm/2016/04/10/test-post-e.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/algorithm/2016/04/10/test-post-e.html</guid>
         
         <category>tag1</category>
         
@@ -246,8 +246,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:27:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/data_sciences/2016/04/10/test-post-d.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/data_sciences/2016/04/10/test-post-d.html</guid>
+        <link>http://localhost:4000/home/data_sciences/2016/04/10/test-post-d.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/data_sciences/2016/04/10/test-post-d.html</guid>
         
         <category>tag1</category>
         
@@ -278,8 +278,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:26:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/algorithm/2016/04/10/test-post-c.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/algorithm/2016/04/10/test-post-c.html</guid>
+        <link>http://localhost:4000/home/algorithm/2016/04/10/test-post-c.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/algorithm/2016/04/10/test-post-c.html</guid>
         
         <category>tag1</category>
         
@@ -310,8 +310,8 @@
 
 </description>
         <pubDate>Sun, 10 Apr 2016 18:25:44 +0200</pubDate>
-        <link>http://localhost:4000/jk_home/music/2016/04/10/test-post-b.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jk_home/music/2016/04/10/test-post-b.html</guid>
+        <link>http://localhost:4000/home/music/2016/04/10/test-post-b.html</link>
+        <guid isPermaLink="true">http://localhost:4000/home/music/2016/04/10/test-post-b.html</guid>
         
         <category>tag1</category>
         
