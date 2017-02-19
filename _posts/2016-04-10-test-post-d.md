@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "Data mining with Python and Numpy : Case study"
+menu:		  main
 date:         2016-04-10 18:27:44 +0200
 author:       "Author"
 categories:   data_sciences

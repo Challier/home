@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "Test Posts 4"
+menu:		  main
 date:         2017-02-16 17:16:44 +0200
 author:       "Author"
 categories:   data_sciences

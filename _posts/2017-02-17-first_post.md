@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "First Post!"
+menu:		  main
 date:         2017-02-17 13:16:44 +0200
 author:       "Victor"
 categories:   general

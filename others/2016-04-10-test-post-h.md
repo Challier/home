@@ -3,7 +3,7 @@ layout:       post
 title:        "Test Posts 8"
 date:         2016-04-10 18:31:44 +0200
 author:       "Author"
-categories:   music algorithm
+categories:   music
 tags:         tag1 tag2
 
 # POSTS LIST

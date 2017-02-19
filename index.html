@@ -51,6 +51,7 @@ description: >
 <section class="tiles" style='display:none'>
 
   {% for post in site.posts limit:24 %}
+  {% if post.menu == 'main' %}
       <article class="article {{ post.class }}">
         <span class="image">
           <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
@@ -63,6 +64,7 @@ description: >
           </div>
         </a>
       </article>
+    {% endif %}
     {% endfor %}
 
 </section>

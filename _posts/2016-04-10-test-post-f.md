@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "Test Posts 6"
+menu:		  main
 date:         2016-04-10 17:14:44 +0200
 author:       "Author"
 categories:   algorithm
