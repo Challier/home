@@ -61,7 +61,7 @@ l : {'u': 1, 'l': 0, 'o': 2, 'h': 1, 'e': 0, 'y': 0}
 o : {'u': 1, 'l': 0, 'o': 1, 'h': 1, 'e': 0, 'y': 0}
 w : {'w': -1, 'u': 1, 'l': 0, 'o': 1, 'h': 1, 'e': 0, 'y': 0}
 ```
-<p>Once we built that dictionary, the remaining task is to sum the values over the keys. Each count will show us how many times we have to substract the key from one of the lists. The code below passes all test cases on Hackerrank.</p>
+<p>Once we built that dictionary, the remaining task is to sum the values over the keys. Each count will show us how many times we have to substract the key from one of the lists. The code below passes all test cases on Hackerrank. We loop once over both strings, dictionary search/update is a <b>O(1)</b> operation. The solution is a <b>O(N+M)</b> time complexity.</p>
 
 
 ``` python

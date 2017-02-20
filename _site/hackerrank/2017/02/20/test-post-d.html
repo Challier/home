@@ -163,7 +163,7 @@
 <span class="n">w</span> <span class="p">:</span> <span class="p">{</span><span class="s">'w'</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">'u'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'l'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'o'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'h'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'e'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'y'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
 </code></pre>
 </div>
-<p>Once we built that dictionary, the remaining task is to sum the values over the keys. Each count will show us how many times we have to substract the key from one of the lists. The code below passes all test cases on Hackerrank.</p>
+<p>Once we built that dictionary, the remaining task is to sum the values over the keys. Each count will show us how many times we have to substract the key from one of the lists. The code below passes all test cases on Hackerrank. We loop once over both strings, dictionary search/update is a <b>O(1)</b> operation. The solution is a <b>O(N+M)</b> time complexity.</p>
 
 <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">number_needed</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">):</span>
     
