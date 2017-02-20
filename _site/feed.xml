@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Victor Challier</title>
-    <description>This is Phantom, a simple design built around a grid of large, colorful, semi-interactive image tiles (of which you can have as many or as few as you like). Makes use of some SVG and animation techniques I've been experimenting with on that other project of mine you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
+    <description>I write about Data Sciences, Python, Algorithms &amp; Data Structures. Come and discover new interview problems solved each week!
 </description>
     <link>http://localhost:4000/home/</link>
     <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Feb 2017 14:53:57 +0100</pubDate>
-    <lastBuildDate>Mon, 20 Feb 2017 14:53:57 +0100</lastBuildDate>
+    <pubDate>Mon, 20 Feb 2017 16:09:45 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Feb 2017 16:09:45 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
