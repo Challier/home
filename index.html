@@ -20,7 +20,7 @@ description: >
             {% for category in categories %}
             <div class="button small xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
                 {% if category contains 'algorithm' %} 
-                  Algorithm &amp; Data Structures
+                  Algorithms &amp; Data Structures
                 {% else %}
                   {{ category | first }}
                 {% endif %}
