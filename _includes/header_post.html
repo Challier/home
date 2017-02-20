@@ -8,7 +8,7 @@
         </ul>
       </nav>
 
-      <div  class = "banner-image" style="background-image: url('{{ page.header-image | prepend: site.baseurl }}'); height:100%;" ><h1><center>{{ page.title | capitals }}</center></h1></div>
+      <div  class = "banner-image" style="background-image: url('{{ page.header-image | prepend: site.baseurl }}'); height:100%;" ><h1><center>{{ page.post_title | capitals }}</center></h1></div>
 </header>
 
 <!-- Menu -->
@@ -18,7 +18,7 @@
     {% assign pages = site.pages | sort: "order"  %}
     {% for my_page in pages %}
       {% if my_page.menu == 'main' %}
-        {% if my_page.post_title %}
+        {% if my_page.title %}
         <li><a href="{{ my_page.url | prepend: site.baseurl }}" title="{{ my_page.title }}">{{ my_page.title }}</a></li>
         {% endif %}
       {% endif %}
