@@ -7,6 +7,7 @@ date:         2017-02-19 13:16:44 +0200
 author:       "Victor"
 categories:   general
 tags:         welcome first
+excerpt:      Yay, here is my first post!
 
 # POSTS LIST
 class:       "general"                         # config bg-color to post list card (1..6)

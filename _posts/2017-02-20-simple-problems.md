@@ -7,6 +7,7 @@ menu:		  main
 author:       "Victor"
 categories:   hackerrank
 tags:         tag1 tag2
+excerpt:      Coding interview, problems & solutions
 
 # POSTS LIST
 class:       "hackerrank"                         # config bg-color to post list card (1..6)
