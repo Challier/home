@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/home/</link>
     <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Feb 2017 12:45:11 +0100</pubDate>
-    <lastBuildDate>Mon, 20 Feb 2017 12:45:11 +0100</lastBuildDate>
+    <pubDate>Mon, 20 Feb 2017 12:57:06 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Feb 2017 12:57:06 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
-        <title>Cracking the Interview&lt;br&gt;Making Anagrams</title>
+        <title>Making Anagrams</title>
         <description>&lt;h4&gt;Definition&lt;/h4&gt;
 
 &lt;p&gt;&lt;b&gt;Anagram&lt;/b&gt; : a word, phrase, or name formed by rearranging the letters of another, such as spar, formed from rasp.&lt;/p&gt;
