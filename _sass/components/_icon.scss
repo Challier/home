@@ -22,7 +22,9 @@
 			@include vendor('transition', (
 				'background-color #{_duration(transition)} ease-in-out',
 				'color #{_duration(transition)} ease-in-out',
-				'border-color #{_duration(transition)} ease-in-out'
+				'border-color #{_duration(transition)} ease-in-out',
+				'opacity #{_duration(transition)} ease-in-out'
+
 			));
 			background-color: transparent;
 			border: solid 1px _palette(border);
@@ -38,9 +40,60 @@
 				font-size: 1.1em;
 			}
 
+			&.fa-twitter{
+				color:#1DA1F2;
+				border-color:#1DA1F2;
+			}
+
+			&.fa-soundcloud{
+				color:#FC571F;
+				border-color:#FC571F;
+			}
+
+			&.fa-linkedin{
+				color: #1a85bc;
+				border-color: #1a85bc;
+			}
+
+			&.fa-github{
+				color: #333333;
+				border-color: #333333;
+			}
+
+			&.fa-facebook{
+				color: #3B5998;
+				border-color: #3B5998;
+			}
+
+			&.fa-rss{
+				color: #FA9C39;
+				border-color: #FA9C39;
+			}
+
+			&.fa-envelope-o{
+				color: #CA1407;
+				border-color: #CA1407;
+			}
+
+			&.fa-reddit-alien{
+				color: #ff4500;
+				border-color: #ff4500;
+			}
+
+			&.fa-google-plus{
+				color: #CA1407;
+				border-color: #CA1407;
+			}
+
+			&.fa-code{
+				color: #28B15D;
+				border-color: #28B15D;
+			}
+
+
 			&:hover {
-				color: #174A9B;
-				border-color: #174A9B;
+				opacity: 0.6;
+				background-color: transparent;
 			}
 
 			&:active {

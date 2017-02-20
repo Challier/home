@@ -11,16 +11,17 @@
 		$duration: 0.5s;
 		$ease: 'ease';
 
+
+		@include vendor('transition', (
+			'height #{$duration} #{$ease}'
+		));
+
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		postiion: relative;
 		margin: ($gutter * -1) 0 0 ($gutter * -1);
-
+		
 		article {
-			/*@include vendor('transition', (
-				'transform #{$duration} #{$ease}',
-				'opacity #{$duration} #{$ease}'
-			));*/
 			position: relative;
 			width: calc(#{(100% / 3)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
