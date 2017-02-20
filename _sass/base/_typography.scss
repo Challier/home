@@ -72,9 +72,22 @@
 		}
 	}
 
-	h2, h3, h4, h5, h6 {
+	h3, h2, h5, h6 {
 		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
+		line-height: 1.5;
+		margin: 0 0 (_size(element-margin) * 1) 0;
+		text-transform: uppercase;
+		letter-spacing: _font(letter-spacing);
+
+		a {
+			color: inherit;
+		}
+	}
+
+	h4 {
+		color: _palette(fg-bold);
+		font-weight: _font(weight-bold-alt);
 		line-height: 1.5;
 		margin: 0 0 (_size(element-margin) * 1) 0;
 		text-transform: uppercase;
