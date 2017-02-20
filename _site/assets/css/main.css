@@ -2487,7 +2487,7 @@ button,
         background-size: 1.5em 1.5em; } }
 
 #header {
-  padding: 8em 0 0.1em 0 ; }
+  padding: 3em 0 0.1em 0 ; }
   #header .logo {
     display: block;
     border-bottom: 0;
@@ -2730,14 +2730,14 @@ body.is-menu-visible #menu {
 
 /* Main */
 #main {
-  padding: 0em 0 6em 0 ; }
+  padding: 0em 0 3em 0 ; }
   @media screen and (max-width: 736px) {
     #main {
       padding: 0em 0 4em 0 ; } }
 
 /* Footer */
 #footer {
-  padding: 5em 0 6em 0 ;
+  padding: 3em 0 4em 0 ;
   background-color: #f6f6f6; }
   #footer > .inner {
     display: -moz-flex;
