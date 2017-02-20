@@ -40,7 +40,7 @@ description: >
           <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
         </span>
         <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
-          <h2 style="font-weight:700;">{{ post.title }}</h2>
+          <h2 style="font-weight:700;">{{ post.post_title }}</h2>
           <span style="font-weight:300;">{{ post.date | date: "%b %-d, %Y" }}</span>
           <div class="content">
             <p>{{ post.description }}</p>

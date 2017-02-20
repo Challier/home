@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "Making Anagrams"
+post_title:	  "Cracking the Interview<br/>Making Anagrams"
 date:         2017-02-20 09:00:00 +0200
 menu:		  main
 author:       "Victor"
