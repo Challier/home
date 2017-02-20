@@ -1,4 +1,4 @@
-I write about Data Sciences, Python, Algorithms & Data Structures. New interview problems and solutions published every week!
+I write about Data Sciences, Python, Algorithms & Data Structures. New interview problems and solutions posted every week!
 
 (* = not included)
 
