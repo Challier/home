@@ -1,24 +1,22 @@
 ---
 layout:       post
-title:        "Test Posts 6"
-menu:		  main
-date:         2016-04-10 17:14:44 +0200
+title:        "Data mining with Python and Numpy : Case study"
+date:         2016-04-10 18:27:44 +0200
 author:       "Author"
-categories:   algorithm
+categories:   hackerrank
 tags:         tag1 tag2
 
 # POSTS LIST
-class:       "algorithm"                         # config bg-color to post list card (1..6)
-list-image:  "/assets/images/Chess_square.jpg"       # config image to post list card (1..6)
+class:       "hackerrank"                         # config bg-color to post list card (1..6)
+list-image:  "/assets/images/NYC_square.jpg"       # config image to post list card (1..6)
 description: >                                # config description to post list card
-  Sed nisl arcu euismod sit amet nisi
-  lorem etiam dolor veroeros et feugiat.
+  This article is a data mining case study. Discover an email dataset, and go through the following steps : data visualization, pre-processing, feature extraction and prediction.
 
 # POST HEADER
 header-image: "/assets/images/emocow_banner.jpg"      # config image to post header
-alt-image:    "image description test post f" # config image description to alt att.
+alt-image:    "image description test post d" # config image description to alt att.
 ---
-Hey Victor! You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 

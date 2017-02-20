@@ -1,21 +1,21 @@
 ---
 layout:       post
-title:        "Data mining with Python and Numpy : Case study"
-menu:		  main
-date:         2016-04-10 18:27:44 +0200
+title:        "Test Posts 10"
+date:         2016-04-10 18:33:44 +0200
 author:       "Author"
-categories:   hackerrank
+categories:   algorithm
 tags:         tag1 tag2
 
 # POSTS LIST
-class:       "hackerrank"                         # config bg-color to post list card (1..6)
-list-image:  "/assets/images/NYC_square.jpg"       # config image to post list card (1..6)
+class:       "algorithm"                         # config bg-color to post list card (1..6)
+list-image:  "/assets/images/Chess_square.jpg"       # config image to post list card (1..6)
 description: >                                # config description to post list card
-  This article is a data mining case study. Discover an email dataset, and go through the following steps : data visualization, pre-processing, feature extraction and prediction.
+  Sed nisl arcu euismod sit amet nisi
+  lorem etiam dolor veroeros et feugiat.
 
 # POST HEADER
 header-image: "/assets/images/emocow_banner.jpg"      # config image to post header
-alt-image:    "image description test post d" # config image description to alt att.
+alt-image:    "image description test post j" # config image description to alt att.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
