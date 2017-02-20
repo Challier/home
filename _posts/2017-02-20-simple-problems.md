@@ -6,7 +6,7 @@ date:         2017-02-20 09:00:00 +0200
 menu:		  main
 author:       "Victor"
 categories:   hackerrank
-tags:         tag1 tag2
+tags:         hackerrank coding interview
 excerpt:      Coding interview, problems & solutions
 
 # POSTS LIST
