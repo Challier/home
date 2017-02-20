@@ -11,6 +11,7 @@
 
 		@include padding(3em, 0, (0, 0, 3em, 0));
 		background-color: _palette(bg-alt);
+		border-top: thick double _palette(fg);
 
 		> .inner {
 			@include vendor('display', 'flex');

@@ -2738,7 +2738,8 @@ body.is-menu-visible #menu {
 /* Footer */
 #footer {
   padding: 3em 0 4em 0 ;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  border-top: thick double #585858; }
   #footer > .inner {
     display: -moz-flex;
     display: -webkit-flex;
