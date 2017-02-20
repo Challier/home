@@ -29,9 +29,16 @@ alt-image:    "image description test post d" # config image description to alt 
 
 <h4>Example</h4>
 
-A = 'helloyou', B = 'yellow'
+``` python
+A = 'helloyou' 
+B = 'yellow'
+```
 <p>A has two 'o's when B only has one. A has an 'h' and a 'u' when B doesn't have any. We can't build B from A if we keep these characters. Using the same logic, we can't build A from B if we keep 'w'.</p>
-<p>Let's remove 'h', 'u' and one 'o' from A. Let's remove 'w' from B. We get A = 'elloy' and B = 'yello'. These two are anagrams, we found the solution! In total we removed four character from A and B, so: <b>number_needed('helloyou', 'yellow') = 4</b></p>
+<p>Let's remove 'h', 'u' and one 'o' from A. Let's remove 'w' from B. We get A = 'elloy' and B = 'yello'. These two are anagrams, we found the solution! In total we removed four characters from A and B, so: </p>
+``` python
+print(number_needed('helloyou', 'yellow'))
+4
+```
 
 <h4>Problem Solution</h4>
 <p>The example above showed a way to solve the issue : for each string, for each character in that string, see how many occurences we have in that string and count how many we should remove to equalize the number of occurences in the other string. This solution would work, but the complexity isn't good enough. Given <b>N</b> and <b>M</b> the strings' sizes, looping twice produces a <b>0(N*M)</b> complexity.</p>
