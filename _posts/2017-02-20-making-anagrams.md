@@ -43,7 +43,7 @@ print(number_needed('helloyou', 'yellow'))
 <h4>Problem Solution</h4>
 <p>The example above showed a way to solve the issue : for each string, for each character in that string, see how many occurences we have in that string and count how many we should remove to equalize the number of occurences in the other string. This solution would work, but the complexity isn't good enough. Given <b>N</b> and <b>M</b> the strings' sizes, looping twice produces a <b>0(N*M)</b> complexity.</p>
 <p>We can loop over the strings only once using a dictionary, which gives us a <b>O(N+M)</b> complexity, let's see how it works:</p>
-<p>Our dictionary is a counter of elements. The trick here is to loop over the two strings using only one dictionary. We want to count the differences, so we can say "if a character is available in A, add 1 to that key's value" and "if a character is available in B, substract 1 to that key's value". In the end, we have three cases:</p>
+<p>Our dictionary keeps character counts. We want to count the differences, so we use the logic : "for each character in A add 1" and "for each character in B substract 1". In the end, we have three cases:</p>
 <ul>
 <li>If count = 0, then we have the same occurences for that character in A and B.</li>
 <li>If count is strictly positive, then the character appears more in A.</li>
