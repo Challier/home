@@ -1465,7 +1465,7 @@ h2, h3, h4, h5, h6 {
   line-height: 1.5;
   margin: 0 0 2em 0;
   text-transform: uppercase;
-  letter-spacing: 0.35em; }
+  letter-spacing: 0.2em; }
   h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit; }
 
@@ -1983,10 +1983,10 @@ button,
   font-size: 0.8em;
   font-weight: 900;
   height: 3.5em;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.2em;
   line-height: 3.45em;
   overflow: hidden;
-  padding: 0 1.25em 0 1.6em;
+  padding: 0 1.25em 0 1.45em;
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
@@ -2285,14 +2285,14 @@ button,
       color: #585858;
       text-align: center;
       text-decoration: none;
-      z-index: 3; }
+      z-index: 3;
+      overflow: auto; }
       .tiles article > a > :last-child {
         margin: 0; }
       .tiles article > a:hover {
         color: #585858 !important; }
       .tiles article > a h2 {
-        margin: 0;
-        letter-spacing: 1px; }
+        margin: 0; }
       .tiles article > a .content {
         -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
         -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2397,7 +2397,7 @@ button,
   border-bottom: 0;
   color: inherit;
   font-weight: 900;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.2em;
   margin: 0 0 2.5em 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -2442,7 +2442,7 @@ button,
         border: 0;
         font-size: 0.8em;
         font-weight: 900;
-        letter-spacing: 0.35em;
+        letter-spacing: 0.2em;
         text-transform: uppercase; }
       #header_post nav ul li a[href="#menu"] {
         -webkit-tap-highlight-color: transparent;
@@ -2493,7 +2493,7 @@ button,
     border-bottom: 0;
     color: inherit;
     font-weight: 900;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.2em;
     margin: 0 0 2.5em 0;
     text-decoration: none;
     text-transform: uppercase;
@@ -2538,7 +2538,7 @@ button,
           border: 0;
           font-size: 0.8em;
           font-weight: 900;
-          letter-spacing: 0.35em;
+          letter-spacing: 0.2em;
           text-transform: uppercase; }
         #header nav ul li a[href="#menu"] {
           -webkit-tap-highlight-color: transparent;
