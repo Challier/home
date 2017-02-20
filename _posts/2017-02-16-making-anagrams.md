@@ -24,7 +24,7 @@ alt-image:    "image description test post d" # config image description to alt 
 
 <h4>Description of the problem</h4>
 
-<p>The problem was taken on Hackerrank's website. Link to problem <a href="https://www.hackerrank.com/challenges/ctci-making-anagrams">here</a>.</p>
+<p>The problem was taken on Hackerrank, you can find it <a href="https://www.hackerrank.com/challenges/ctci-making-anagrams">here</a>.</p>
 <p>Consider two strings A and B. The goal of this problem is to compute the minimum number of characters we need to remove from A and B to make them anagrams of each other.</p>
 
 <h4>Example</h4>

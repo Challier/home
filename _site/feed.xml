@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/home/</link>
     <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Feb 2017 13:10:10 +0100</pubDate>
-    <lastBuildDate>Mon, 20 Feb 2017 13:10:10 +0100</lastBuildDate>
+    <pubDate>Mon, 20 Feb 2017 13:11:43 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Feb 2017 13:11:43 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -18,7 +18,7 @@
 
 &lt;h4&gt;Description of the problem&lt;/h4&gt;
 
-&lt;p&gt;The problem was taken on Hackerrank's website. Link to problem &lt;a href=&quot;https://www.hackerrank.com/challenges/ctci-making-anagrams&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The problem was taken on Hackerrank, you can find it &lt;a href=&quot;https://www.hackerrank.com/challenges/ctci-making-anagrams&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Consider two strings A and B. The goal of this problem is to compute the minimum number of characters we need to remove from A and B to make them anagrams of each other.&lt;/p&gt;
 
 &lt;h4&gt;Example&lt;/h4&gt;
