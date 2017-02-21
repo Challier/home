@@ -24,4 +24,7 @@ kramdown:
   input:      GFM
   auto_ids:   false
 
+gems:
+  - jekyll-sitemap
+
 exclude: ["README.md", "LICENSE.md", "screenshot.png"]
