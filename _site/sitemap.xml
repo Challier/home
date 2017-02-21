@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/home/first_post/</loc>
+<<<<<<< HEAD
+<loc>https://challier.github.io/home/first_post/</loc>
 <lastmod>2017-02-19T12:16:44+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/making-anagrams/</loc>
+<loc>https://challier.github.io/home/making-anagrams/</loc>
 <lastmod>2017-02-20T08:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/simple-problems/</loc>
+<loc>https://challier.github.io/home/simple-problems/</loc>
 <lastmod>2017-02-20T08:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/divisible-subset/</loc>
+<loc>https://challier.github.io/home/divisible-subset/</loc>
 <lastmod>2017-02-20T23:00:01+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/about/</loc>
+<loc>https://challier.github.io/home/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/home/elements/</loc>
+<loc>https://challier.github.io/home/elements/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/home/</loc>
+<loc>https://challier.github.io/home/</loc>
 </url>
 </urlset>
