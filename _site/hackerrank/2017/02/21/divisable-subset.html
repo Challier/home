@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+  Phantom by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Non-Divisible Subsets | Victor Challier</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Victor,Challier,hackerrank,divisible,subset,solution">
+    <meta name="description" content="
+      
+        Coding interview problem, non-divisible subset detailed solution
+      ">
+    
+        <meta property="og:image" content="/home/assets/images/">
+    
+    <!--[if lte IE 8]><script src="/home/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="/home/assets/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" sizes="32x32" href="/home/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/home/assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/home/assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico" type="/home/assets/images/image/x-icon">
+    <link rel="icon" href="favicon.ico" type="/home/assets/images/image/x-icon">
+    <!--[if lte IE 9]><link rel="stylesheet" href="/home/assets/css/ie9.css"><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/home/assets/css/ie8.css"><![endif]-->
+    <link rel="canonical" href="http://localhost:4000/home/hackerrank/2017/02/21/divisable-subset.html">
+    <link rel="alternate" type="application/rss+xml" title="Victor Challier" href="http://localhost:4000/home/feed.xml">
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+<header id="header_post">
+
+    <!-- Nav -->
+      <nav>
+        <ul>
+          <li><a href="#menu" title="Menu">Menu</a></li>
+        </ul>
+      </nav>
+
+      <div  class = "banner-image" style="background-image: url('/home/assets/images/subsets_banner.jpg'); height:100%;" ><h1><center>Non Divisible Subsets</center></h1></div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+  <h2>Menu</h2>
+  <ul>
+    
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+        <li><a href="/home/" title="Home">Home</a></li>
+        
+      
+    
+      
+        
+        <li><a href="/home/about/" title="About">About</a></li>
+        
+      
+    
+      
+    
+  </ul>
+</nav>
+
+
+        <!-- Main -->
+          <div id="main">
+            <div class="inner">
+
+              <!-- Container element -->
+
+
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <div itemprop="articleBody" style="padding-left:15%; padding-right: 15%">
+    <br/>
+    <br/>
+
+
+    <h4>Problem Description</h4>
+
+<p>The problem was published on Hackerrank, you can find it <a href="https://www.hackerrank.com/challenges/non-divisible-subset">here</a>.</p>
+<p>You are given a set of integers <code>S</code> and an integer <code>k</code>. The goal of this problem is to return the size of the biggest subset you can build such as the sum of any two numbers of <code>S</code> is non-divisible by <code>k</code>.</p>
+
+<h4>Example</h4>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">S</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span> <span class="mi">7</span> <span class="mi">2</span> <span class="mi">4</span><span class="p">}</span>
+</code></pre>
+</div>
+<p>The biggest subset you can build here is <code>S' = {1 7 4}</code>. The sum of any two numbers of <code>S'</code> is non-divisible by 3 and adding 2 would make that statement false. Indeed:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">1</span>
+<span class="mi">4</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">6</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="mi">7</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">3</span>
+</code></pre>
+</div>
+
+<h4>Problem Solution</h4>
+<p>It took me some time to understand how to solve the example above without testing all the subset possibilities. While I was testing, I had this idea : <b>since we want to divide the sum of two numbers by k, then we can work with division remainders</b>. Here is the quick math behind the idea :</p>
+<p><center><code>(a+b)%k == 0</code> if and only if <code>(a%k + b%k)%k == 0</code> </center></p>
+<p><center>This means <code>a and b can coexist in a non-divisable subset</code> if and only if <br /><code>a%k and b%k can coexist in a non-divisable subset</code> </center></p>
+
+<p>Given this statement, the example above is much easier to understand : converting <code>x</code> to <code>x%k</code> for every x in the initial set gives <code>1 7 2 4 =&gt; 1 1 2 1</code>. All the ones can coexist in the same subset since <code>(1 + 1) % 3 != 0</code>, and we can't add the two since it will make a three when combining with any one.</p>
+
+<p>Now let's build our algorithm. First we will perform our euclidean division on each number of the set and store the remainder into a list. How will we build our subset from here? The idea is to see which numbers cannot coexist. Two remainders <code>r<sub>i</sub></code> and <code>r<sub>j</sub></code> can coexist if and only if <code>r<sub>i</sub> + r<sub>j</sub> != k</code> (this statement is based on the bit of math we did before). <b>In the case where two remainders can't coexist, which one do we keep?</b> We should keep the one that is the most represented, since we want to build the biggest subset. Example above with remainders <code>1 1 2 1</code>: ones and twos can't coexist, but we keep ones because there are more ones than twos. We can store the the occurences count in a dictionary, a very handy tool here.</p>
+
+<p>Once we have that dictionary, let's see how we compute the biggest subset size. Here is what the dictionary looks like at each step:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Initial list :  [1, 3, 5, 6, 7, 8, 10, 12, 15, 26, 74, 55, 235, 467]
+k value :  4
+With remainders :  [1, 3, 1, 2, 3, 0, 2, 0, 3, 2, 2, 3, 3, 3]
+Dictionary step by step:
+1 {1: 1}
+3 {1: 1, 3: 1}
+1 {1: 2, 3: 1}
+2 {1: 2, 2: 1, 3: 1}
+3 {1: 2, 2: 1, 3: 2}
+0 {0: 1, 1: 2, 2: 1, 3: 2}
+2 {0: 1, 1: 2, 2: 2, 3: 2}
+0 {0: 2, 1: 2, 2: 2, 3: 2}
+3 {0: 2, 1: 2, 2: 2, 3: 3}
+2 {0: 2, 1: 2, 2: 3, 3: 3}
+2 {0: 2, 1: 2, 2: 4, 3: 3}
+3 {0: 2, 1: 2, 2: 4, 3: 4}
+3 {0: 2, 1: 2, 2: 4, 3: 5}
+3 {0: 2, 1: 2, 2: 4, 3: 6}
+Biggest subset size: 8
+</code></pre>
+</div>
+
+<p>Looping through the remainders, here is how we find the best subset :</p>
+<ul>
+    <li> For the numbers where <b>remainders = 0</b>, we can only keep one of them because 0 is the only remainder that can't coexist with zero. Indeed, if we have 0 twice in the final subset, then we can just sum them and get a number divisible by k.</li>
+    <li> <b>Remainder = 1</b>. These numbers can't coexist with those where remainder = 3, because 3 + 1 = 4 = k. But there are more threes so let's keep the threes.</li>
+    <li> <b>Remainder = 2</b>. They can't coexits with themselves (2 + 2 = 4 = k), so we'll keep only one of them. It is the same logic as in remainder equal to 0.</li>
+    <li> <b>Remainder = 2</b>. They can't coexist with numbers where remainder = 1, but there are more threes than ones so we'll keep them!</li>
+</ul>
+
+<p>In the end, we have 1 zero, 1 two, and 6 three. That's 8 elements for the biggest subset, which can be {3, 6, 7, 8, 15, 55, 235, 467} or {3, 6, 7, 12, 15, 55, 235, 467} or {3, 7, 12, 15, 26, 55, 235, 467} depending on the number we chosse when remainder is zero or two. The code below shows the implementation of the algorithm. It passes all test cases on Hackerrank. We iterate once over the initial list and once over the dictionary keys so <b>the complexity is O(N)</b>, awesome!</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">biggest_subset</span><span class="p">(</span><span class="n">list_init</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">n_test</span><span class="p">):</span>
+    <span class="n">nb_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">nb</span> <span class="ow">in</span> <span class="n">list_init</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">nb</span> <span class="ow">in</span> <span class="n">nb_dict</span><span class="p">:</span>
+                <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>    
+                
+    <span class="n">count</span> <span class="o">=</span> <span class="n">n_test</span>
+    <span class="n">count_equal</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">nb</span> <span class="ow">in</span> <span class="n">nb_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">k</span><span class="o">-</span><span class="n">nb</span> <span class="o">==</span> <span class="n">nb</span> <span class="ow">or</span> <span class="n">nb</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">-=</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">nb</span><span class="p">)</span> <span class="ow">in</span> <span class="n">nb_dict</span> <span class="ow">and</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">k</span><span class="o">-</span><span class="n">nb</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]:</span>
+            <span class="n">count</span> <span class="o">-=</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">nb</span><span class="p">)</span> <span class="ow">in</span> <span class="n">nb_dict</span> <span class="ow">and</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">k</span><span class="o">-</span><span class="n">nb</span><span class="p">]</span> <span class="o">==</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]:</span>
+            <span class="n">count_equal</span> <span class="o">+=</span> <span class="n">nb_dict</span><span class="p">[</span><span class="n">k</span><span class="o">-</span><span class="n">nb</span><span class="p">]</span>
+        
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="n">count_equal</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">n_test</span><span class="p">,</span> <span class="n">k_test</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+<span class="n">list_nb</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">%</span><span class="n">k_test</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">biggest_subset</span><span class="p">(</span><span class="n">list_nb</span><span class="p">,</span> <span class="n">k_test</span><span class="p">,</span> <span class="n">n_test</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p><i>I added a case in the loop over the dictionary, when two remainders that can't coexist have the same occurences. Here, we can select whichever we want for the final set but we know that half of the numbers will be removed. That's the <code>count_equal//2</code> that you'll see below.</i></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">biggest_subset</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mi">467</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+<span class="mi">8</span>
+</code></pre>
+</div>
+
+
+
+    <p style="text-align:right;">
+      <i><span itemprop="name"> Written by Victor</span><br/> Published <time datetime="2017-02-20T23:00:01+01:00" itemprop="datePublished">
+        Feb 21, 2017
+      </time></i>
+      <!-- 
+        • <span>hackerrank</span>
+      
+        • <span>divisible</span>
+      
+        • <span>subset</span>
+      
+        • <span>solution</span>
+       -->
+    </p>
+  </div>
+
+  <center>
+            <a class="button small default xsmargin" href="/home/">Browse more articles and coding problems</a>
+  </center>
+</article>
+
+            </div>
+          </div>
+
+        
+
+<!-- Footer -->
+          <footer id="footer">
+              <center>
+                <p>Want to share this article and fight against world anger?</p>
+                <ul class="icons">
+                  <li><a href="https://twitter.com/intent/tweet?text=Non-Divisible Subsets&url=http://localhost:4000/hackerrank/2017/02/21/divisable-subset.html&via=victor_challier&related=victor_challier" rel="nofollow" target="_blank" title="Share on Twitter" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="http://www.reddit.com/submit?url=http://localhost:4000/hackerrank/2017/02/21/divisable-subset.html&title=Non-Divisible Subsets" rel="nofollow" class="icon style2 fa-reddit-alien" target="_blank"><span class="label">Reddit</span></a></li>
+                  <li><a href="https://facebook.com/sharer.php?u=http://localhost:4000/hackerrank/2017/02/21/divisable-subset.html" rel="nofollow" target="_blank" title="Share on Facebook" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/hackerrank/2017/02/21/divisable-subset.html&title=Non-Divisible Subsets&summary=Given a list of integers and another integer k, build non-divisible subset.
+" class="icon style2 fa-linkedin" rel="nofollow" target="_blank"><span class="label">LinkedIn</span></a></li>
+                  <!--<li><a href="https://www.quora.com/profile/Victor-Challier" class="icon style2 fa-quora"><span class="label">Quora</span></a></li>-->
+                  <li><a href="https://plus.google.com/share?url=http://localhost:4000/hackerrank/2017/02/21/divisable-subset.html" target="_blank" title="Share on Google+" rel="nofollow" class="icon style2 fa-google-plus"><span class="label">Google+</span></a></li>
+              </ul>
+        </center>
+              <div class="inner">
+              <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net" title="HTML5 UP" target="_blank">HTML5 UP</a></li>
+                <li>subscribe <a href="/home/feed.xml">via RSS</a></li>
+              </ul>
+            </div>
+          </footer>
+
+
+      </div>
+
+    <!-- Scripts -->
+<script src="/home/assets/js/jquery.min.js"></script>
+<script src="/home/assets/js/skel.min.js"></script>
+<script src="/home/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/home/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/home/assets/js/main.js"></script>
+<script src="/home/assets/js/CTM_script.js"></script>
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-92004027-1', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+
+
+  </body>
+</html>
