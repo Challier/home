@@ -81,7 +81,7 @@ Biggest subset size: 8
 <p>In the end, we have 1 zero, 1 two, and 6 threes. That's 8 elements for the biggest subset, which can be {3, 6, 7, 8, 15, 55, 235, 467} or {3, 6, 7, 12, 15, 55, 235, 467} or {3, 7, 12, 15, 26, 55, 235, 467} depending on the number we choose for remainders zero and two. The code below shows the algorithm implemented. It passes all test cases on Hackerrank. We iterate once over the initial list and once over the dictionary keys so <b>the complexity is O(N)</b>, awesome!</p>
 
 ``` python
-def biggest_subset(list_init, k, n_test):
+def biggest_subset(list_init, k, n):
     nb_dict = dict()
 
     for nb in list_init:
@@ -90,7 +90,7 @@ def biggest_subset(list_init, k, n_test):
             else:
                 nb_dict[nb] = 1    
                 
-    count = n_test
+    count = n
     count_equal = 0
 
     for nb in nb_dict.keys():

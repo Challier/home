@@ -158,7 +158,7 @@ Biggest subset size: 8
 
 <p>In the end, we have 1 zero, 1 two, and 6 threes. That's 8 elements for the biggest subset, which can be {3, 6, 7, 8, 15, 55, 235, 467} or {3, 6, 7, 12, 15, 55, 235, 467} or {3, 7, 12, 15, 26, 55, 235, 467} depending on the number we choose for remainders zero and two. The code below shows the algorithm implemented. It passes all test cases on Hackerrank. We iterate once over the initial list and once over the dictionary keys so <b>the complexity is O(N)</b>, awesome!</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">biggest_subset</span><span class="p">(</span><span class="n">list_init</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">n_test</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">biggest_subset</span><span class="p">(</span><span class="n">list_init</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">nb_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 
     <span class="k">for</span> <span class="n">nb</span> <span class="ow">in</span> <span class="n">list_init</span><span class="p">:</span>
@@ -167,7 +167,7 @@ Biggest subset size: 8
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">nb_dict</span><span class="p">[</span><span class="n">nb</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>    
                 
-    <span class="n">count</span> <span class="o">=</span> <span class="n">n_test</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">n</span>
     <span class="n">count_equal</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">for</span> <span class="n">nb</span> <span class="ow">in</span> <span class="n">nb_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
