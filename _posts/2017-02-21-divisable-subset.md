@@ -13,7 +13,7 @@ excerpt:      Coding interview problem, non-divisible subset detailed solution
 class:       "hackerrank"                         # config bg-color to post list card (1..6)
 
 description: >                                # config description to post list card
-  Given a list of integers and another integer k, build non-divisible subset.
+  Given a set of integers and another integer k, calculate the size of the largest non-divisible subset.
 
 # POST HEADER
 header-image: "/assets/images/subsets_banner.jpg"      # config image to post header
