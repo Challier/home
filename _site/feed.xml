@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/home/</link>
     <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Feb 2017 23:35:21 +0100</pubDate>
-    <lastBuildDate>Tue, 21 Feb 2017 23:35:21 +0100</lastBuildDate>
+    <pubDate>Tue, 21 Feb 2017 23:55:14 +0100</pubDate>
+    <lastBuildDate>Tue, 21 Feb 2017 23:55:14 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -111,8 +111,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 23:00:01 +0100</pubDate>
-        <link>http://localhost:4000/home/hackerrank/2017/02/21/divisible-subset.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2017/02/21/divisible-subset.html</guid>
+        <link>http://localhost:4000/home/divisible-subset/</link>
+        <guid isPermaLink="true">http://localhost:4000/home/divisible-subset/</guid>
         
         <category>hackerrank</category>
         
@@ -171,8 +171,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 08:00:00 +0100</pubDate>
-        <link>http://localhost:4000/home/hackerrank/2017/02/20/simple-problems.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2017/02/20/simple-problems.html</guid>
+        <link>http://localhost:4000/home/simple-problems/</link>
+        <guid isPermaLink="true">http://localhost:4000/home/simple-problems/</guid>
         
         <category>hackerrank</category>
         
@@ -277,8 +277,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 08:00:00 +0100</pubDate>
-        <link>http://localhost:4000/home/hackerrank/2017/02/20/making-anagrams.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/hackerrank/2017/02/20/making-anagrams.html</guid>
+        <link>http://localhost:4000/home/making-anagrams/</link>
+        <guid isPermaLink="true">http://localhost:4000/home/making-anagrams/</guid>
         
         <category>hackerrank</category>
         
@@ -303,8 +303,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Sun, 19 Feb 2017 12:16:44 +0100</pubDate>
-        <link>http://localhost:4000/home/general/2017/02/19/first_post.html</link>
-        <guid isPermaLink="true">http://localhost:4000/home/general/2017/02/19/first_post.html</guid>
+        <link>http://localhost:4000/home/first_post/</link>
+        <guid isPermaLink="true">http://localhost:4000/home/first_post/</guid>
         
         <category>welcome</category>
         

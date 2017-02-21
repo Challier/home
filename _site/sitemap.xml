@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/home/general/2017/02/19/first_post.html</loc>
+<loc>http://localhost:4000/home/first_post/</loc>
 <lastmod>2017-02-19T12:16:44+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/hackerrank/2017/02/20/making-anagrams.html</loc>
+<loc>http://localhost:4000/home/making-anagrams/</loc>
 <lastmod>2017-02-20T08:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/hackerrank/2017/02/20/simple-problems.html</loc>
+<loc>http://localhost:4000/home/simple-problems/</loc>
 <lastmod>2017-02-20T08:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/home/hackerrank/2017/02/21/divisible-subset.html</loc>
+<loc>http://localhost:4000/home/divisible-subset/</loc>
 <lastmod>2017-02-20T23:00:01+01:00</lastmod>
 </url>
 <url>
