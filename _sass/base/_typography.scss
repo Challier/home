@@ -71,6 +71,10 @@
 		@include breakpoint(xxsmall) {
 			font-size: 1.75em;
 		}
+
+		&.post{
+			font-weight: _font(weight-bold-alt) !important;
+		}
 	}
 
 	h3, h2, h5, h6 {

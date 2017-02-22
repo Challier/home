@@ -5,12 +5,12 @@ post_title:	  "Cracking the Interview<br/>Short questions to know by heart"
 date:         2017-02-20 09:00:00 +0200
 menu:		  main
 author:       "Victor"
-categories:   hackerrank
-tags:         hackerrank coding interview
+categories:   codingpro
+tags:         coding interview
 excerpt:      Coding interview, problems & solutions
 
 # POSTS LIST
-class:       "hackerrank"                         # config bg-color to post list card (1..6)
+class:       "codingpro"                         # config bg-color to post list card (1..6)
 
 description: >                                # config description to post list card
   This article is continually updated. It includes a list of short algorithms/data structures questions that you should master before any coding interview.
