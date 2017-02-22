@@ -19,7 +19,7 @@ description: >
         <h4>What do you want to read about?</h4>
         
         <div class="button-group filter-button-group">
-            <div class="button small default xsmargin all" data-filter=".nothing">All</div>
+            <div class="button small default special xsmargin all" data-filter=".nothing">Everything</div>
             {% assign categories = site.categories | sort: categories  %}
             {% for category in categories %}
             <div class="button small xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
@@ -30,7 +30,7 @@ description: >
                 {% endif %}
             </div>
             {% endfor %}
-            <div class="button small default xsmargin all_none" data-filter=".all_none">None</div>
+            <div class="button small default xsmargin all_none" data-filter=".all_none">Nothing</div>
         </div>
     </center>
 </section>
