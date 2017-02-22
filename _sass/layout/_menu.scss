@@ -21,11 +21,12 @@
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #EDEDED;
-		color: _palette(fg);
+		background: _palette(fg);
+		color: _palette(bg);
 		cursor: default;
 		visibility: hidden;
 		z-index: _misc(z-index-base) + 2;
+		opacity: 0.95;
 
 		> .inner {
 			@include vendor('transition', 'opacity #{_duration(menu)} ease');
