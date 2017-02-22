@@ -25,6 +25,7 @@
 			position: relative;
 			width: calc(#{(100% / 3)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
+			box-shadow: 0px 2px 10px grey;
 
 			> .image {
 				@include vendor('transition', 'transform #{$duration} #{$ease}');
@@ -172,36 +173,32 @@
 			&.hackerrank {
 				> .image:before {
 					background-color: white;
-					border-style:solid;
-					border-width: 10px;
-					border-color: #2ec866;
+					border-top: solid 8px #2ec866;
+					border-top-style:inset;
 				}
 			}
 
 			&.general {
 				> .image:before {
 					background-color: white;
-					border-style:solid;
-					border-width: 10px;
-					border-color: #fff200;
+					border-top: solid 8px #fff200;
+					border-top-style:inset;
 				}
 			}
 
 			&.algorithm {
 				> .image:before {
 					background-color: white;
-					border-style:solid;
-					border-width: 10px;
-					border-color: #A52E2E;
+					border-top: solid 8px #A52E2E;
+					border-top-style:inset;
 				}
 			}
 
 			&.music {
 				> .image:before {
 					background-color: white;
-					border-style:solid;
-					border-width: 10px;
-					border-color: #efc623;
+					border-top: solid 8px #efc623;
+					border-top-style:inset;
 				}
 			}
 
