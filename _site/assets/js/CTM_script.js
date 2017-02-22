@@ -20,7 +20,7 @@ $(document).ready(function() {
 // init Isotope
 var $tiles = $('.tiles').isotope({});
 // store filter for each group
-var filters = ['.nothing'];
+var filters = ['.nothing','another_nothing'];
 
 $('.filter-button-group').one( 'click', 'div', function() {
   $('.tiles').fadeIn();
@@ -33,33 +33,50 @@ $('.filter-button-group').on( 'click', 'div', function() {
   var filter = $(this).attr('data-filter');
 
 if ($(this).hasClass('all')) {
-  if (!$( ".algorithm" ).hasClass("on")) {
+    if (!$( ".algorithm" ).hasClass("on")) {
       $( ".algorithm" ).trigger( "click" );
+    }
+    else {
     }
     if (!$( ".data_sciences" ).hasClass("on")) 
       {$( ".data_sciences" ).trigger( "click" );
-  }
+    }
+    else {
+    }
     if (!$( ".general" ).hasClass('on')) {
       $( ".general" ).trigger( "click" );
     }
+    else {
+    }
     if (!$( ".hackerrank" ).hasClass('on')) {
-      $( ".hackerrank" ).trigger( "click" );}
+      $( ".hackerrank" ).trigger( "click" );
+    }
+    else {
+    }
   }
 
 if ($(this).hasClass('all_none')) {
-  if ($( ".algorithm" ).hasClass('on')) 
-      {$( ".algorithm" ).trigger( "click" );
+  if ($( ".algorithm" ).hasClass('on')) {
+    $( ".algorithm" ).trigger( "click" );
   }
-  if ($( ".data_sciences" ).hasClass('on')) 
-    {$( ".data_sciences" ).trigger( "click" );
+  else {
   }
-  if ($( ".general" ).hasClass('on')) 
-    {$( ".general" ).trigger( "click" );
+  if ($( ".data_sciences" ).hasClass('on')) {
+    $( ".data_sciences" ).trigger( "click" );
+  }
+  else {
+    }
+  if ($( ".general" ).hasClass('on')) {
+    $( ".general" ).trigger( "click" );
+  }
+  else {
+    }
+  if ($( ".hackerrank" ).hasClass('on')) {
+    $( ".hackerrank" ).trigger( "click" );
+  }
+  else {
+  }
 }
-  if ($( ".hackerrank" ).hasClass('on')) 
-    {$( ".hackerrank" ).trigger( "click" );
-}
-  }
 
   if ( isChecked ) {
     addFilter( filter );

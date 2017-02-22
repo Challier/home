@@ -2363,10 +2363,7 @@ button,
       border-top: solid 8px #efc623;
       border-top-style: inset; }
     body:not(.is-touch) .tiles article:hover > .image {
-      -moz-transform: scale(1.08);
-      -webkit-transform: scale(1.08);
-      -ms-transform: scale(1.08);
-      transform: scale(1.08); }
+      /*@include vendor('transform', 'scale(1.08)');*/ }
       body:not(.is-touch) .tiles article:hover > .image:before {
         color: #585858;
         opacity: 0.35; }

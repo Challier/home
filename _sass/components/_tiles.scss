@@ -206,7 +206,7 @@
 				&:hover {
 					> .image {
 
-						@include vendor('transform', 'scale(1.08)');
+						/*@include vendor('transform', 'scale(1.08)');*/
 
 						&:before {
 							color: _palette(fg);
