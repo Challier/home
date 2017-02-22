@@ -48,8 +48,8 @@ if ($(this).hasClass('all')) {
     }
     else {
     }
-    if (!$( ".hackerrank" ).hasClass('on')) {
-      $( ".hackerrank" ).trigger( "click" );
+    if (!$( ".codingpro" ).hasClass('on')) {
+      $( ".codingpro" ).trigger( "click" );
     }
     else {
     }
@@ -71,8 +71,8 @@ if ($(this).hasClass('all_none')) {
   }
   else {
     }
-  if ($( ".hackerrank" ).hasClass('on')) {
-    $( ".hackerrank" ).trigger( "click" );
+  if ($( ".codingpro" ).hasClass('on')) {
+    $( ".codingpro" ).trigger( "click" );
   }
   else {
   }

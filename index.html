@@ -16,21 +16,23 @@ description: >
 </header>
 <section>
     <center>
-        <h4>What do you want to read about?</h4>
+        <div class="button default xsmargin">What do you want to read about?</div><br/><br/>
         
         <div class="button-group filter-button-group">
-            <div class="button small default special xsmargin all" data-filter=".nothing">All</div>
+            <div class="button no-border default xsmargin all" data-filter=".nothing">All</div>
             {% assign categories = site.categories | sort: categories  %}
             {% for category in categories %}
-            <div class="button small xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
+            <div class="button no-border xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
                 {% if category contains 'algorithm' %} 
                   Algorithms &amp; Data Structures
+                {% elsif category contains 'codingpro' %} 
+                  Coding Interviews
                 {% else %}
                   {{ category | first }}
                 {% endif %}
             </div>
             {% endfor %}
-            <div class="button small default xsmargin all_none" data-filter=".all_none">Reset</div>
+            <div class="button no-border default xsmargin all_none" data-filter=".all_none">Reset</div>
         </div>
     </center>
 </section>

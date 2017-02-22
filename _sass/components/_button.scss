@@ -90,19 +90,24 @@
 			opacity: 0.25;
 		}
 
-		&.hackerrank {
+		&.no-border{
+
+			box-shadow: none !important;
+
+		}
+
+		&.codingpro {
 
 			&:hover {
-				border-bottom-color: #2ec866;
-				color: #2ec866 !important;
-				box-shadow: inset 0 0 0 2px #2ec866;
+				border-bottom-color: #028C00;
+				color: #028C00 !important;
+				box-shadow: inset 0 0 0 2px #028C00 !important;
 			}
 
 			&.on {
-				border-bottom-color: #2ec866;
-				color: #2ec866 !important;
-				box-shadow: inset 0 0 0 2px #2ec866;
-				opacity: 0.7;
+				border-bottom-color: #028C00;
+				color: #028C00 !important;
+				box-shadow: inset 0 0 0 2px #028C00 !important;
 			}
 		}
 
@@ -111,30 +116,28 @@
 			&:hover {
 				border-bottom-color: #efc623;
 				color: #efc623 !important;
-				box-shadow: inset 0 0 0 2px #efc623;
+				box-shadow: inset 0 0 0 2px #efc623 !important;
 			}
 
 			&.on {
 				border-bottom-color: #efc623;
 				color: #efc623 !important;
-				box-shadow: inset 0 0 0 2px #efc623;
-				opacity: 0.7;
+				box-shadow: inset 0 0 0 2px #efc623 !important;
 			}
 		}
 
 		&.algorithm {
 
-			&:hover {
+			&:hover:on {
 				border-bottom-color: #A52E2E;
 				color: #A52E2E !important;
-				box-shadow: inset 0 0 0 2px #A52E2E;
+				box-shadow: inset 0 0 0 2px #A52E2E !important;
 			}
 
 			&.on {
 				border-bottom-color: #A52E2E;
 				color: #A52E2E !important;
-				box-shadow: inset 0 0 0 2px #A52E2E;
-				opacity: 0.7;
+				box-shadow: inset 0 0 0 2px #A52E2E !important;
 			}
 		}
 
@@ -143,14 +146,13 @@
 			&:hover {
 				border-bottom-color: #efc623;
 				color: #efc623 !important;
-				box-shadow: inset 0 0 0 2px #efc623;
+				box-shadow: inset 0 0 0 2px #efc623 !important;
 			}
 
 			&.on {
 				border-bottom-color: #efc623;
 				color: #efc623 !important;
-				box-shadow: inset 0 0 0 2px #efc623;
-				opacity: 0.7;
+				box-shadow: inset 0 0 0 2px #efc623 !important;
 			}
 		}
 	}

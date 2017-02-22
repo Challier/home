@@ -1460,6 +1460,8 @@ h1 {
   @media screen and (max-width: 360px) {
     h1 {
       font-size: 1.75em; } }
+  h1.post {
+    font-weight: 600 !important; }
 
 h3, h2, h5, h6 {
   font-weight: 400;
@@ -2111,23 +2113,28 @@ button,
     -ms-pointer-events: none;
     pointer-events: none;
     opacity: 0.25; }
-  input[type="submit"].hackerrank:hover,
-  input[type="reset"].hackerrank:hover,
-  input[type="button"].hackerrank:hover,
-  button.hackerrank:hover,
-  .button.hackerrank:hover {
-    border-bottom-color: #2ec866;
-    color: #2ec866 !important;
-    box-shadow: inset 0 0 0 2px #2ec866; }
-  input[type="submit"].hackerrank.on,
-  input[type="reset"].hackerrank.on,
-  input[type="button"].hackerrank.on,
-  button.hackerrank.on,
-  .button.hackerrank.on {
-    border-bottom-color: #2ec866;
-    color: #2ec866 !important;
-    box-shadow: inset 0 0 0 2px #2ec866;
-    opacity: 0.7; }
+  input[type="submit"].no-border,
+  input[type="reset"].no-border,
+  input[type="button"].no-border,
+  button.no-border,
+  .button.no-border {
+    box-shadow: none !important; }
+  input[type="submit"].codingpro:hover,
+  input[type="reset"].codingpro:hover,
+  input[type="button"].codingpro:hover,
+  button.codingpro:hover,
+  .button.codingpro:hover {
+    border-bottom-color: #028C00;
+    color: #028C00 !important;
+    box-shadow: inset 0 0 0 2px #028C00 !important; }
+  input[type="submit"].codingpro.on,
+  input[type="reset"].codingpro.on,
+  input[type="button"].codingpro.on,
+  button.codingpro.on,
+  .button.codingpro.on {
+    border-bottom-color: #028C00;
+    color: #028C00 !important;
+    box-shadow: inset 0 0 0 2px #028C00 !important; }
   input[type="submit"].general:hover,
   input[type="reset"].general:hover,
   input[type="button"].general:hover,
@@ -2135,7 +2142,7 @@ button,
   .button.general:hover {
     border-bottom-color: #efc623;
     color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623; }
+    box-shadow: inset 0 0 0 2px #efc623 !important; }
   input[type="submit"].general.on,
   input[type="reset"].general.on,
   input[type="button"].general.on,
@@ -2143,16 +2150,15 @@ button,
   .button.general.on {
     border-bottom-color: #efc623;
     color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623;
-    opacity: 0.7; }
-  input[type="submit"].algorithm:hover,
-  input[type="reset"].algorithm:hover,
-  input[type="button"].algorithm:hover,
-  button.algorithm:hover,
-  .button.algorithm:hover {
+    box-shadow: inset 0 0 0 2px #efc623 !important; }
+  input[type="submit"].algorithm:hover:on,
+  input[type="reset"].algorithm:hover:on,
+  input[type="button"].algorithm:hover:on,
+  button.algorithm:hover:on,
+  .button.algorithm:hover:on {
     border-bottom-color: #A52E2E;
     color: #A52E2E !important;
-    box-shadow: inset 0 0 0 2px #A52E2E; }
+    box-shadow: inset 0 0 0 2px #A52E2E !important; }
   input[type="submit"].algorithm.on,
   input[type="reset"].algorithm.on,
   input[type="button"].algorithm.on,
@@ -2160,8 +2166,7 @@ button,
   .button.algorithm.on {
     border-bottom-color: #A52E2E;
     color: #A52E2E !important;
-    box-shadow: inset 0 0 0 2px #A52E2E;
-    opacity: 0.7; }
+    box-shadow: inset 0 0 0 2px #A52E2E !important; }
   input[type="submit"].music:hover,
   input[type="reset"].music:hover,
   input[type="button"].music:hover,
@@ -2169,7 +2174,7 @@ button,
   .button.music:hover {
     border-bottom-color: #efc623;
     color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623; }
+    box-shadow: inset 0 0 0 2px #efc623 !important; }
   input[type="submit"].music.on,
   input[type="reset"].music.on,
   input[type="button"].music.on,
@@ -2177,8 +2182,7 @@ button,
   .button.music.on {
     border-bottom-color: #efc623;
     color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623;
-    opacity: 0.7; }
+    box-shadow: inset 0 0 0 2px #efc623 !important; }
 
 /* Tiles */
 .tiles {
@@ -2347,22 +2351,18 @@ button,
         opacity: 0; }
         .tiles article > a .content > :last-child {
           margin-bottom: 0; }
-    .tiles article.hackerrank > .image:before {
+    .tiles article.codingpro > .image:before {
       background-color: white;
-      border-top: solid 8px #2ec866;
-      border-top-style: inset; }
+      border-top: solid 8px #028C00; }
     .tiles article.general > .image:before {
       background-color: white;
-      border-top: solid 8px #fff200;
-      border-top-style: inset; }
+      border-top: solid 8px #fff200; }
     .tiles article.algorithm > .image:before {
       background-color: white;
-      border-top: solid 8px #A52E2E;
-      border-top-style: inset; }
+      border-top: solid 8px #A52E2E; }
     .tiles article.music > .image:before {
       background-color: white;
-      border-top: solid 8px #efc623;
-      border-top-style: inset; }
+      border-top: solid 8px #efc623; }
     body:not(.is-touch) .tiles article:hover > .image {
       /*@include vendor('transform', 'scale(1.08)');*/ }
       body:not(.is-touch) .tiles article:hover > .image:before {

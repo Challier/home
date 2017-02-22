@@ -5,12 +5,12 @@ post_title:	  "Non Divisible Subsets"
 date:         2017-02-21 00:00:01 +0200
 menu:		  main
 author:       "Victor"
-categories:   hackerrank
-tags:         hackerrank divisible subset solution
+categories:   codingpro
+tags:         coding interview divisible subset solution
 excerpt:      Coding interview problem, non-divisible subset detailed solution
 
 # POSTS LIST
-class:       "hackerrank"                         # config bg-color to post list card (1..6)
+class:       "codingpro"                         # config bg-color to post list card (1..6)
 
 description: >                                # config description to post list card
   Given a set of integers and another integer k, calculate the size of the largest non-divisible subset.

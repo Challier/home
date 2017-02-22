@@ -5,12 +5,12 @@ post_title:	  "Cracking the Interview<br/>Making Anagrams"
 date:         2017-02-20 09:00:00 +0200
 menu:		  main
 author:       "Victor"
-categories:   hackerrank
-tags:         hackerrank anagram making solution
+categories:   codingpro
+tags:         coding interview anagram making solution
 excerpt:      Coding interview problem, making anagrams
 
 # POSTS LIST
-class:       "hackerrank"                         # config bg-color to post list card (1..6)
+class:       "codingpro"                         # config bg-color to post list card (1..6)
 
 description: >                                # config description to post list card
   How many characters do you need to remove to make two strings anagrams of each other? Solution using a dictionary.
