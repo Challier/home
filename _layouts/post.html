@@ -23,8 +23,15 @@ comments: true
         • <span>{{ tag }}</span>
       {% endfor %} -->
     </p>
-  {% if page.comments %}
-    <div id="disqus_thread"></div>
+  
+  </div>
+
+  <center>
+            <a class="button small default xsmargin" href="{{ site.baseurl }}/">Browse more articles and coding problems</a>
+  </center>
+</article>
+
+<div id="disqus_thread"></div>
         <script>
 
         /**
@@ -44,11 +51,3 @@ comments: true
         })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  {% endif %}
-  
-  </div>
-
-  <center>
-            <a class="button small default xsmargin" href="{{ site.baseurl }}/">Browse more articles and coding problems</a>
-  </center>
-</article>
