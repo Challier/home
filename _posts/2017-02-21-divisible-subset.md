@@ -8,6 +8,7 @@ author:       "Victor"
 categories:   codingpro
 tags:         coding interview divisible subset solution
 excerpt:      Coding interview problem, non-divisible subset detailed solution
+update:       no
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)

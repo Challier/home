@@ -8,6 +8,7 @@ author:       "Victor"
 categories:   general
 tags:         welcome first
 excerpt:      Yay, here is my first post!
+update:		  no
 
 # POSTS LIST
 class:       "general"                         # config bg-color to post list card (1..6)
