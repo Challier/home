@@ -46,19 +46,22 @@ description: >
         <span class="image">
           <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
         </span>
-        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:50%; position: absolute; top: 0 !important; overflow: hidden;">
-          <img src="{{ post.header-image | prepend: site.baseurl }}" alt="" >
+        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:50%; position: absolute; top: 0 !important; overflow: hidden; background-image: url('{{ "/assets/images/emocow_square.jpg" | prepend: site.baseurl }}');">
         </a>
         <a class = "down" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:50%; position: absolute; bottom: 0 !important;">
-          <span style="font-weight:300;">{% if post.class contains 'algorithm' %} 
+          <!--<span style="font-weight:300;">{% if post.class contains 'algorithm' %} 
                   Algorithms &amp; Data Structures
                 {% elsif post.class contains 'codingpro' %} 
                   Coding Interviews
                 {% else %}
                   {{ post.class | first }}
-                {% endif %}</span>
+                {% endif %}</span>-->
           <h2 style="font-weight:700;">{{ post.post_title }}</h2>
-          <span style="font-weight:300;">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span style="font-weight:300;">
+              {% if post.update contains 'yes' %}
+              Last update on
+              {% endif %}
+              {{ post.date | date: "%b %-d, %Y" }}</span>
           <div class="content">
             <p>{{ post.description }}</p>
           </div>

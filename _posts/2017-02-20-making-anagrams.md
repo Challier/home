@@ -8,6 +8,7 @@ author:       "Victor"
 categories:   codingpro
 tags:         coding interview anagram making solution
 excerpt:      Coding interview problem, making anagrams
+update:       no
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)

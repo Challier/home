@@ -8,6 +8,7 @@ author:       "Victor"
 categories:   codingpro
 tags:         coding interview
 excerpt:      Coding interview, problems & solutions
+update:		  yes
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)
