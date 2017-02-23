@@ -20,6 +20,7 @@ description: >                                # config description to post list 
 header-image: "/assets/images/first_banner.jpg"      # config image to post header
 alt-image:    "image description test post d" # config image description to alt att.
 ---
+<br/>
 Hi there! Thanks for stopping by, I hope you'll enjoy your time on my page! This is the first post of a hopefully long list of articles that will cover various topics : Data Sciences, Data Engineering, Algorithms, Data Structures...
 
 There's a French expression that litteraly translates to "being as proud as a peacock", well I'm definitely hapy to finally be running my own page! I believe every new milestone should include a thank you note, mine will give credits : shoutout to [HTML5 Up][HTML5], who designs amazing templates including [Phantom][Phantom]. Also, thanks to [Andrew Banchich][AndrewBanchich] for making a Jekyll version out of it! Last but not least, big thanks to [Unsplash][Unsplash] for all of their amazing photos.
