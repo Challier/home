@@ -50,14 +50,14 @@
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 50% !important;
+					height: 60% !important;
 				}
 
 				> .up {
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 50% !important;
+					height: 40% !important;
 				}
 			}
 

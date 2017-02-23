@@ -12,12 +12,13 @@ update:       no
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)
+thumbnail-image:  "/assets/images/ensemble_thumbnail.jpg"       # config image to post list card (1..6)
 
 description: >                                # config description to post list card
   Given a set of integers and another integer k, calculate the size of the largest non-divisible subset.
 
 # POST HEADER
-header-image: "/assets/images/subsets_banner.jpg"      # config image to post header
+header-image: "/assets/images/ensemble_banner.jpg"      # config image to post header
 alt-image:    "image description test post d" # config image description to alt att.
 ---
 <h4>Problem Description</h4>

@@ -2060,7 +2060,7 @@ button,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: rgba(23, 74, 155, 0.1); }
+    background-color: rgba(128, 128, 128, 0.4); }
   input[type="submit"].small,
   input[type="reset"].small,
   input[type="button"].small,
@@ -2271,13 +2271,13 @@ button,
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 50% !important; }
+      height: 60% !important; }
     .tiles article:not(:hover) > .up {
       -moz-transition: height 0.5s ease;
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 50% !important; }
+      height: 40% !important; }
     .tiles article > .image {
       -moz-transition: -moz-transform 0.5s ease;
       -webkit-transition: -webkit-transform 0.5s ease;

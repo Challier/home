@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/home/</link>
     <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Feb 2017 04:31:06 +0100</pubDate>
-    <lastBuildDate>Thu, 23 Feb 2017 04:31:06 +0100</lastBuildDate>
+    <pubDate>Thu, 23 Feb 2017 12:36:41 +0100</pubDate>
+    <lastBuildDate>Thu, 23 Feb 2017 12:36:41 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -299,7 +299,7 @@ Biggest subset size: 8
         <title>First Post!</title>
         <description>&lt;p&gt;Hi there! Thanks for stopping by, I hope you’ll enjoy your time on my page! This is the first post of a hopefully long list of articles that will cover various topics : Data Sciences, Data Engineering, Algorithms, Data Structures…&lt;/p&gt;
 
-&lt;p&gt;I believe every new milestone should include a thank you note, mine will give credits : a big thanks to &lt;a href=&quot;https://html5up.net/&quot;&gt;HTML5 Up&lt;/a&gt;, who designs amazing templates including &lt;a href=&quot;https://html5up.net/phantom&quot;&gt;Phantom&lt;/a&gt;. Also, thanks to &lt;a href=&quot;https://github.com/andrewbanchich/phantom-jekyll-theme&quot;&gt;Andrew Banchich&lt;/a&gt; for making a Jekyll version out of it! Last but not least, big thanks to &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt; for all of their amazing photos.&lt;/p&gt;
+&lt;p&gt;There’s a French expression that litteraly translates to “being as proud as a peacock”, well I’m definitely hapy to finally be running my own page! I believe every new milestone should include a thank you note, mine will give credits : shoutout to &lt;a href=&quot;https://html5up.net/&quot;&gt;HTML5 Up&lt;/a&gt;, who designs amazing templates including &lt;a href=&quot;https://html5up.net/phantom&quot;&gt;Phantom&lt;/a&gt;. Also, thanks to &lt;a href=&quot;https://github.com/andrewbanchich/phantom-jekyll-theme&quot;&gt;Andrew Banchich&lt;/a&gt; for making a Jekyll version out of it! Last but not least, big thanks to &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt; for all of their amazing photos.&lt;/p&gt;
 
 &lt;p&gt;I guess we’re ready to go and start producing content. Let’s keep in touch, cheers!&lt;/p&gt;
 
