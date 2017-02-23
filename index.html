@@ -16,7 +16,7 @@ description: >
 </header>
 <section>
     <center>
-        <div class="button default xsmargin">What do you want to read about?</div><br/><br/>
+        <div class="button default xsmargin disabled menu">What do you want to read about?</div><br/><br/>
         
         <div class="button-group filter-button-group">
             <div class="button no-border default xsmargin all" data-filter=".nothing">All</div>
@@ -41,11 +41,22 @@ description: >
 
   {% for post in site.posts limit:24 %}
   {% if post.menu == 'main' %}
-      <article class="article {{ post.class }}">
+
+      <article class="article {{ post.class }} {{ post.title }}" >
         <span class="image">
           <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
         </span>
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:50%; position: absolute; top: 0 !important; overflow: hidden;">
+          <img src="{{ post.header-image | prepend: site.baseurl }}" alt="" >
+        </a>
+        <a class = "down" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:50%; position: absolute; bottom: 0 !important;">
+          <span style="font-weight:300;">{% if post.class contains 'algorithm' %} 
+                  Algorithms &amp; Data Structures
+                {% elsif post.class contains 'codingpro' %} 
+                  Coding Interviews
+                {% else %}
+                  {{ post.class | first }}
+                {% endif %}</span>
           <h2 style="font-weight:700;">{{ post.post_title }}</h2>
           <span style="font-weight:300;">{{ post.date | date: "%b %-d, %Y" }}</span>
           <div class="content">
@@ -53,6 +64,8 @@ description: >
           </div>
         </a>
       </article>
+
+
     {% endif %}
     {% endfor %}
 
