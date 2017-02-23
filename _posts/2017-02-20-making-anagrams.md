@@ -12,6 +12,7 @@ update:       no
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)
+thumbnail-image:  "/assets/images/anagram_thumbnail.jpg"       # config image to post list card (1..6)
 
 description: >                                # config description to post list card
   How many characters do you need to remove to make two strings anagrams of each other? Solution using a dictionary.

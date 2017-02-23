@@ -12,6 +12,7 @@ update:		  yes
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)
+thumbnail-image:  "/assets/images/questions_thumbnail.jpg"       # config image to post list card (1..6)
 
 description: >                                # config description to post list card
   This article is continually updated. It includes a list of short algorithms/data structures questions that you should master before any coding interview.
