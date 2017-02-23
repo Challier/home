@@ -15,8 +15,18 @@
 });*/
 
 $(document).ready(function() {
-// external js: isotope.pkgd.js
 
+/*$('.article').mouseenter(function() {
+  $(this).children('.up').height(0);
+  $(this).children('.down').height('90%');
+});
+
+$('.article').mouseleave(function() {
+  $(this).children('.down').height('25%');
+  $(this).children('.up').height('75%');
+}); */
+
+// external js: isotope.pkgd.js
 // init Isotope
 var $tiles = $('.tiles').isotope({});
 // store filter for each group
