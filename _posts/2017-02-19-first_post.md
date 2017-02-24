@@ -25,7 +25,7 @@ Hi there! Thanks for stopping by, I hope you'll enjoy your time on my page! This
 
 There's a French expression that litteraly translates to "being as proud as a peacock", well I'm definitely hapy to finally be running my own page! I believe every new milestone should include a thank you note, mine will give credits : shoutout to [HTML5 Up][HTML5], who designs amazing templates including [Phantom][Phantom]. Also, thanks to [Andrew Banchich][AndrewBanchich] for making a Jekyll version out of it! Last but not least, big thanks to [Unsplash][Unsplash] for all of their amazing photos.
 
-I guess we're ready to go and start producing content. Let's keep in touch, cheers!
+I guess we're ready to go and start writing. Let's keep in touch, cheers!
 
 [Phantom]: https://html5up.net/phantom
 [HTML5]:   https://html5up.net/
