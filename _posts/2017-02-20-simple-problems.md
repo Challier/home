@@ -12,13 +12,13 @@ update:		  yes
 
 # POSTS LIST
 class:       "codingpro"                         # config bg-color to post list card (1..6)
-thumbnail-image:  "/assets/images/questions_thumbnail.jpg"       # config image to post list card (1..6)
+thumbnail-image:  "/assets/images/interview_thumbnail.jpg"       # config image to post list card (1..6)
 
 description: >                                # config description to post list card
-  This article is continually updated. It includes a list of short algorithms/data structures questions that you should master before any coding interview.
+  For those who don't look good enough to get an offer right away, this article includes various easy problems. The goal is to decompose the solving steps and manipulate simple data structures. Good luck if you're interviewing soon!
 
 # POST HEADER
-header-image: "/assets/images/questions_banner.jpg"      # config image to post header
+header-image: "/assets/images/interview_banner.jpg"      # config image to post header
 alt-image:    "image description test post d" # config image description to alt att.
 ---
 <h2>Arrays: Left Rotation</h2>
