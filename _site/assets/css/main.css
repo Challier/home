@@ -2160,6 +2160,15 @@ button,
     background-color: #028C00;
     color: white !important;
     box-shadow: inset 0 0 0 2px #028C00 !important; }
+    input[type="submit"].codingpro.on:hover,
+    input[type="reset"].codingpro.on:hover,
+    input[type="button"].codingpro.on:hover,
+    button.codingpro.on:hover,
+    .button.codingpro.on:hover {
+      border-bottom-color: #028C00;
+      background-color: white;
+      color: #028C00 !important;
+      box-shadow: inset 0 0 0 2px #028C00 !important; }
   input[type="submit"].general:hover,
   input[type="reset"].general:hover,
   input[type="button"].general:hover,
@@ -2177,6 +2186,15 @@ button,
     background-color: #efc623;
     color: white !important;
     box-shadow: inset 0 0 0 2px #efc623 !important; }
+    input[type="submit"].general.on:hover,
+    input[type="reset"].general.on:hover,
+    input[type="button"].general.on:hover,
+    button.general.on:hover,
+    .button.general.on:hover {
+      border-bottom-color: #efc623;
+      background-color: white;
+      color: #efc623 !important;
+      box-shadow: inset 0 0 0 2px #efc623 !important; }
   input[type="submit"].algorithm:hover:on,
   input[type="reset"].algorithm:hover:on,
   input[type="button"].algorithm:hover:on,
@@ -2193,22 +2211,41 @@ button,
     border-bottom-color: #A52E2E;
     color: #A52E2E !important;
     box-shadow: inset 0 0 0 2px #A52E2E !important; }
-  input[type="submit"].music:hover,
-  input[type="reset"].music:hover,
-  input[type="button"].music:hover,
-  button.music:hover,
-  .button.music:hover {
-    border-bottom-color: #efc623;
-    color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623 !important; }
-  input[type="submit"].music.on,
-  input[type="reset"].music.on,
-  input[type="button"].music.on,
-  button.music.on,
-  .button.music.on {
-    border-bottom-color: #efc623;
-    color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623 !important; }
+    input[type="submit"].algorithm.on:hover,
+    input[type="reset"].algorithm.on:hover,
+    input[type="button"].algorithm.on:hover,
+    button.algorithm.on:hover,
+    .button.algorithm.on:hover {
+      border-bottom-color: #A52E2E;
+      background-color: white;
+      color: #efc623 !important;
+      box-shadow: inset 0 0 0 2px #A52E2E !important; }
+  input[type="submit"].data_sciences:hover,
+  input[type="reset"].data_sciences:hover,
+  input[type="button"].data_sciences:hover,
+  button.data_sciences:hover,
+  .button.data_sciences:hover {
+    border-bottom-color: #A52E2E;
+    color: #A52E2E !important;
+    box-shadow: inset 0 0 0 2px #A52E2E !important; }
+  input[type="submit"].data_sciences.on,
+  input[type="reset"].data_sciences.on,
+  input[type="button"].data_sciences.on,
+  button.data_sciences.on,
+  .button.data_sciences.on {
+    border-bottom-color: #A52E2E;
+    background-color: #A52E2E;
+    color: white !important;
+    box-shadow: inset 0 0 0 2px #A52E2E !important; }
+    input[type="submit"].data_sciences.on:hover,
+    input[type="reset"].data_sciences.on:hover,
+    input[type="button"].data_sciences.on:hover,
+    button.data_sciences.on:hover,
+    .button.data_sciences.on:hover {
+      border-bottom-color: #A52E2E;
+      background-color: white;
+      color: #A52E2E !important;
+      box-shadow: inset 0 0 0 2px #A52E2E !important; }
 
 /* Tiles */
 .tiles {
@@ -2413,11 +2450,11 @@ button,
       border-bottom: solid 8px #A52E2E;
       border-left: solid 8px #A52E2E;
       border-right: solid 8px #A52E2E; }
-    .tiles article.music > .image:before {
+    .tiles article.data_sciences > .image:before {
       background-color: white;
-      border-bottom: solid 8px #efc623;
-      border-left: solid 8px #efc623;
-      border-right: solid 8px #efc623; }
+      border-bottom: solid 8px #A52E2E;
+      border-left: solid 8px #A52E2E;
+      border-right: solid 8px #A52E2E; }
     body:not(.is-touch) .tiles article:hover .content {
       max-height: 15em;
       opacity: 1; }
