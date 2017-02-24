@@ -47,9 +47,9 @@ description: >
         <span class="image">
           <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
         </span>
-        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:40%; position: absolute; top: 0 !important; overflow: hidden; background-image: url('{{ post.thumbnail-image | prepend: site.baseurl }}'); background-size:     cover;">
+        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:60%; position: absolute; top: 0 !important; overflow: hidden; background-image: url('{{ post.thumbnail-image | prepend: site.baseurl }}'); background-size:     cover;">
         </a>
-        <a class = "down" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:60%; position: absolute; bottom: 0 !important;">
+        <a class = "down" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:40%; position: absolute; bottom: 0 !important;">
           <!--<span style="font-weight:300;">{% if post.class contains 'algorithm' %} 
                   Algorithms &amp; Data Structures
                 {% elsif post.class contains 'codingpro' %} 
