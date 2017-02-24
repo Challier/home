@@ -2274,13 +2274,13 @@ button,
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 70% !important; }
+      height: 60% !important; }
     .tiles article:not(:hover) > .up {
       -moz-transition: height 0.5s ease;
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 30% !important; }
+      height: 40% !important; }
     .tiles article > .image {
       -moz-transition: -moz-transform 0.5s ease;
       -webkit-transition: -webkit-transform 0.5s ease;
@@ -2289,7 +2289,8 @@ button,
       position: relative;
       display: block;
       width: 100%;
-      border-radius: 4px;
+      border-radius: 0;
+      /*_size(border-radius);*/
       overflow: hidden; }
       .tiles article > .image img {
         display: block;
@@ -2359,7 +2360,8 @@ button,
       width: 100%;
       height: 100%;
       padding: 1em;
-      border-radius: 4px;
+      border-radius: 0;
+      /*_size(border-radius);*/
       border-bottom: 0;
       color: #585858;
       text-align: center;

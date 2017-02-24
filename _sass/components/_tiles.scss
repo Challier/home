@@ -50,14 +50,14 @@
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 70% !important;
+					height: 60% !important;
 				}
 
 				> .up {
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 30% !important;
+					height: 40% !important;
 				}
 			}
 
@@ -66,7 +66,7 @@
 				position: relative;
 				display: block;
 				width: 100%;
-				border-radius: _size(border-radius);
+				border-radius: 0; /*_size(border-radius);*/
 				overflow: hidden;
 
 				img {
@@ -123,7 +123,7 @@
 				width: 100%;
 				height: 100%;
 				padding: 1em;
-				border-radius: _size(border-radius);
+				border-radius: 0; /*_size(border-radius);*/
 				border-bottom: 0;
 				color: _palette(fg); 
 				text-align: center;
