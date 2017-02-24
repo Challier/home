@@ -30,11 +30,11 @@ $('.article').mouseleave(function() {
 // init Isotope
 var $tiles = $('.tiles').isotope({});
 // store filter for each group
-var filters = ['.nothing','another_nothing'];
+var filters = ['.codingpro','.general','.data_sciences','.algorithm'];
 
-$('.filter-button-group').one( 'click', 'div', function() {
+/*$('.filter-button-group').one( 'click', 'div', function() {
   $('.tiles').fadeIn();
-});
+});*/
 
 // change is-checked class on buttons
 $('.filter-button-group').on( 'click', 'div', function() {

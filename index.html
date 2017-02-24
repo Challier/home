@@ -16,13 +16,12 @@ description: >
 </header>
 <section>
     <center>
-        <h4>Click on the topic you want to read about!</h4>
         
-        <div class="button-group filter-button-group">
-            <div class="button no-border default xsmargin all" data-filter=".nothing">All</div>
+        <div class="filter-button-group">
+            <div class="button no-border default all filter" data-filter=".nothing">All</div>
             {% assign categories = site.categories | sort: categories  %}
             {% for category in categories %}
-            <div class="button no-border xsmargin {{ category | first }}" data-filter=".{{ category | first }}">
+            <div class="button no-border {{ category | first }} filter on" data-filter=".{{ category | first }}">
                 {% if category contains 'algorithm' %} 
                   Algorithms &amp; Data Structures
                 {% elsif category contains 'codingpro' %} 
@@ -32,12 +31,12 @@ description: >
                 {% endif %}
             </div>
             {% endfor %}
-            <div class="button no-border default xsmargin all_none" data-filter=".all_none">Reset</div>
+            <div class="button no-border default all_none filter" data-filter=".all_none">Reset</div>
         </div>
     </center>
 </section>
 
-<section class="tiles" style='display:none;'>
+<section class="tiles">
 
   {% for post in site.posts limit:24 %}
   {% if post.menu == 'main' %}

@@ -21,12 +21,12 @@
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: _palette(fg);
-		color: _palette(bg);
+		background: white;
+		color: _palette(fg);
 		cursor: default;
 		visibility: hidden;
 		z-index: _misc(z-index-base) + 2;
-		opacity: 0.95;
+		opacity: 1;
 
 		> .inner {
 			@include vendor('transition', 'opacity #{_duration(menu)} ease');
@@ -47,7 +47,7 @@
 
 				> li {
 					padding: 0;
-					border-top: solid 1px transparentize(_palette(bg), 0.85);
+					border-top: solid 1px transparentize(_palette(fg), 0.85);
 
 					a {
 						display: block;
@@ -61,6 +61,11 @@
 						border-top: 0;
 						margin-top: -1em;
 					}
+				}
+
+				&.icons{
+					position: absolute;
+					bottom: 0;
 				}
 			}
 		}
@@ -146,7 +151,7 @@
 		#wrapper {
 			@include vendor('pointer-events', 'none');
 			cursor: default;
-			opacity: 0.25;
+			opacity: 0.05;
 		}
 
 		#menu {

@@ -2132,6 +2132,13 @@ button,
   button.no-border,
   .button.no-border {
     box-shadow: none !important; }
+  input[type="submit"].filter,
+  input[type="reset"].filter,
+  input[type="button"].filter,
+  button.filter,
+  .button.filter {
+    border-radius: 0 !important;
+    margin: 0 !important; }
   input[type="submit"].codingpro:hover,
   input[type="reset"].codingpro:hover,
   input[type="button"].codingpro:hover,
@@ -2146,7 +2153,8 @@ button,
   button.codingpro.on,
   .button.codingpro.on {
     border-bottom-color: #028C00;
-    color: #028C00 !important;
+    background-color: #028C00;
+    color: white !important;
     box-shadow: inset 0 0 0 2px #028C00 !important; }
   input[type="submit"].general:hover,
   input[type="reset"].general:hover,
@@ -2162,7 +2170,8 @@ button,
   button.general.on,
   .button.general.on {
     border-bottom-color: #efc623;
-    color: #efc623 !important;
+    background-color: #efc623;
+    color: white !important;
     box-shadow: inset 0 0 0 2px #efc623 !important; }
   input[type="submit"].algorithm:hover:on,
   input[type="reset"].algorithm:hover:on,
@@ -2669,12 +2678,12 @@ button,
   max-width: 80%;
   height: 100%;
   -webkit-overflow-scrolling: touch;
-  background: #585858;
-  color: white;
+  background: white;
+  color: #585858;
   cursor: default;
   visibility: hidden;
   z-index: 10002;
-  opacity: 0.95; }
+  opacity: 1; }
   #menu > .inner {
     -moz-transition: opacity 0.45s ease;
     -webkit-transition: opacity 0.45s ease;
@@ -2695,7 +2704,7 @@ button,
       padding: 0; }
       #menu > .inner > ul > li {
         padding: 0;
-        border-top: solid 1px rgba(255, 255, 255, 0.15); }
+        border-top: solid 1px rgba(88, 88, 88, 0.15); }
         #menu > .inner > ul > li a {
           display: block;
           padding: 1em 0;
@@ -2705,6 +2714,9 @@ button,
         #menu > .inner > ul > li:first-child {
           border-top: 0;
           margin-top: -1em; }
+      #menu > .inner > ul.icons {
+        position: absolute;
+        bottom: 0; }
   #menu > .close {
     -moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
     -webkit-transition: opacity 0.45s ease, -webkit-transform 0.45s ease;
@@ -2776,7 +2788,7 @@ body.is-menu-visible #wrapper {
   -ms-pointer-events: none;
   pointer-events: none;
   cursor: default;
-  opacity: 0.25; }
+  opacity: 0.05; }
 body.is-menu-visible #menu {
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);

@@ -100,6 +100,11 @@
 
 		}
 
+		&.filter{
+			border-radius: 0 !important;
+			margin: 0 !important;
+		}
+
 		&.codingpro {
 
 			&:hover {
@@ -110,7 +115,8 @@
 
 			&.on {
 				border-bottom-color: #028C00;
-				color: #028C00 !important;
+				background-color: #028C00;
+				color: white !important;
 				box-shadow: inset 0 0 0 2px #028C00 !important;
 			}
 		}
@@ -125,7 +131,8 @@
 
 			&.on {
 				border-bottom-color: #efc623;
-				color: #efc623 !important;
+				background-color: #efc623;
+				color: white !important;
 				box-shadow: inset 0 0 0 2px #efc623 !important;
 			}
 		}
