@@ -10,16 +10,16 @@
 		color: _palette(fg);
 		background-color: _palette(bg);
 		font-family: _font(family);
-		font-size: 14pt;
+		font-size: 8pt;
 		font-weight: _font(weight);
 		line-height: 1.6;
 
 		@include breakpoint(xlarge) {
-			font-size: 14pt;
+			font-size: 12pt;
 		}
 
 		@include breakpoint(large) {
-			font-size: 12pt;
+			font-size: 10pt;
 		}
 	}
 
@@ -50,7 +50,7 @@
 	p {
 		margin: 0 0 _size(element-margin) 0;
 		font-family:(Helvetica Neue, sans-serif);
-		line-height: 1.7;
+		line-height: 1.4;
 	}
 
 	h1 {

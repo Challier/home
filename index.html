@@ -14,7 +14,7 @@ description: >
 	 <h1 class="main-title">{{ page.description }}</h1>
   </center>
 </header>
-<section>
+<section style="margin:1em;">
     <center>
         
         <div class="filter-button-group">
@@ -37,7 +37,6 @@ description: >
         </div>
     </center>
 </section>
-
 <section class="tiles">
 
   {% for post in site.posts limit:24 %}
@@ -57,8 +56,8 @@ description: >
                 {% else %}
                   {{ post.class | first }}
                 {% endif %}</span>-->
-          <h2 style="font-weight:700;">{{ post.post_title }}</h2>
-          <span style="font-weight:300;">
+          <h2 style="font-weight:400;">{{ post.post_title }}</h2>
+          <span>
               {% if post.update contains 'yes' %}
               Last update on
               {% endif %}

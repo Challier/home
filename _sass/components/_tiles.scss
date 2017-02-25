@@ -50,14 +50,14 @@
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 50% !important;
+					height: 60% !important;
 				}
 
 				> .up {
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 50% !important;
+					height: 40% !important;
 				}
 			}
 
@@ -140,7 +140,7 @@
 					letter-spacing: _font(letter-spacing-box);
 				}
 
-				.content {
+				/*.content {
 					@include vendor('transition', (
 						'max-height #{$duration} #{$ease}',
 						'opacity #{$duration} #{$ease}'
@@ -154,7 +154,7 @@
 					> :last-child {
 						margin-bottom: 0;
 					}
-				}
+				}*/
 			}
 
 			/*

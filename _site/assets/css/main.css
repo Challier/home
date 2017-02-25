@@ -1414,15 +1414,15 @@ body, input, select, textarea {
   color: #585858;
   background-color: white;
   font-family: "Source Sans Pro", Helvetica Neue, sans-serif;
-  font-size: 14pt;
+  font-size: 8pt;
   font-weight: 300;
   line-height: 1.6; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 14pt; } }
+      font-size: 12pt; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 12pt; } }
+      font-size: 10pt; } }
 
 a {
   -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -1445,7 +1445,7 @@ em, i {
 p {
   margin: 0 0 1em 0;
   font-family: Helvetica Neue, sans-serif;
-  line-height: 1.7; }
+  line-height: 1.4; }
 
 h1 {
   font-size: 3em;
@@ -2324,13 +2324,13 @@ button,
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 50% !important; }
+      height: 60% !important; }
     .tiles article:not(:hover) > .up {
       -moz-transition: height 0.5s ease;
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 50% !important; }
+      height: 40% !important; }
     .tiles article > .image {
       -moz-transition: -moz-transform 0.5s ease;
       -webkit-transition: -webkit-transform 0.5s ease;
@@ -2417,24 +2417,27 @@ button,
       text-align: center;
       text-decoration: none;
       z-index: 3;
-      overflow: auto; }
+      overflow: auto;
+      				/*.content {
+      					@include vendor('transition', (
+      						'max-height 0.5s ease',
+      						'opacity 0.5s ease'
+      					));
+      					width: 100%;
+      					max-height: 0;
+      					line-height: 1.5;
+      					margin-top: 0.35em;
+      					opacity: 0;
+      
+      					> :last-child {
+      						margin-bottom: 0;
+      					}
+      				}*/ }
       .tiles article > a > :last-child {
         margin: 0; }
       .tiles article > a h2 {
         margin: 0;
         letter-spacing: 0em; }
-      .tiles article > a .content {
-        -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-        -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-        -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-        transition: max-height 0.5s ease, opacity 0.5s ease;
-        width: 100%;
-        max-height: 0;
-        line-height: 1.5;
-        margin-top: 0.35em;
-        opacity: 0; }
-        .tiles article > a .content > :last-child {
-          margin-bottom: 0; }
     .tiles article.codingpro > .image:before {
       background-color: white;
       border-bottom: solid 8px #028C00;
