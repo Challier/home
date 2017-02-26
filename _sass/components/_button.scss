@@ -101,7 +101,7 @@
 		}
 
 		&.filter{
-			border-radius: 0 !important;
+			border-radius: _size(border-radius) !important;
 			margin: 0 !important;
 		}
 

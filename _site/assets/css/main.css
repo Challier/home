@@ -1442,9 +1442,9 @@ strong, b {
 em, i {
   font-style: italic; }
 
-p {
+p, ul {
   margin: 0 0 1em 0;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "proxima-nova", Helvetica Neue, sans-serif;
   line-height: 1.4; }
 
 h1 {
@@ -2141,7 +2141,7 @@ button,
   input[type="button"].filter,
   button.filter,
   .button.filter {
-    border-radius: 0 !important;
+    border-radius: 4px !important;
     margin: 0 !important; }
   input[type="submit"].codingpro:hover,
   input[type="reset"].codingpro:hover,

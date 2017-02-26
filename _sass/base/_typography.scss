@@ -47,9 +47,9 @@
 		font-style: italic;
 	}
 
-	p {
+	p, ul {
 		margin: 0 0 _size(element-margin) 0;
-		font-family:(Helvetica Neue, sans-serif);
+		font-family:("proxima-nova", Helvetica Neue, sans-serif);
 		line-height: 1.4;
 	}
 
