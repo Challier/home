@@ -10,7 +10,7 @@ title: Victor Challier
 description: > # this means to ignore newlines until "baseurl:"
   I write about Data Sciences, Python, Algorithms & Data Structures. New interview problems and solutions posted every week!
 baseurl: "/home" # the subpath of your site, e.g. /blog
-url: "https://challier.github.io/home" # the base hostname & protocol for your site
+url: "https://challier.github.io" # the base hostname & protocol for your site
 permalink: "/:title/"
 CNAME: "victor.data.com"
 
