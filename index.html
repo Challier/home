@@ -26,6 +26,8 @@ description: >
                   Algorithms &amp; Data Structures
                 {% elsif category contains 'codingpro' %} 
                   Coding Interviews
+                {% elsif category contains 'data_sciences' %} 
+                  Data Sciences
                 {% else %}
                   {{ category | first }}
                 {% endif %}
@@ -35,7 +37,6 @@ description: >
         </div>
     </center>
 </section>
-
 <section class="tiles">
 
   {% for post in site.posts limit:24 %}
@@ -45,7 +46,7 @@ description: >
         <span class="image">
           <img src="{{ "/assets/images/White_square.png" | prepend: site.baseurl }}" alt="">
         </span>
-        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:60%; position: absolute; top: 0 !important; overflow: hidden; background-image: url('{{ post.thumbnail-image | prepend: site.baseurl }}'); background-size:     cover;">
+        <a class = "up" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:60%; position: absolute; top: 0 !important; overflow: hidden; background-image: url('{{ post.thumbnail-image | prepend: site.baseurl }}'); background-size: cover;background-position: center; ">
         </a>
         <a class = "down" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" style="height:40%; position: absolute; bottom: 0 !important;">
           <!--<span style="font-weight:300;">{% if post.class contains 'algorithm' %} 
@@ -55,8 +56,8 @@ description: >
                 {% else %}
                   {{ post.class | first }}
                 {% endif %}</span>-->
-          <h2 style="font-weight:700;">{{ post.post_title }}</h2>
-          <span style="font-weight:300;">
+          <h2 style="font-weight:400;">{{ post.post_title }}</h2>
+          <span>
               {% if post.update contains 'yes' %}
               Last update on
               {% endif %}

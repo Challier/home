@@ -1414,15 +1414,15 @@ body, input, select, textarea {
   color: #585858;
   background-color: white;
   font-family: "Source Sans Pro", Helvetica Neue, sans-serif;
-  font-size: 14pt;
+  font-size: 8pt;
   font-weight: 300;
   line-height: 1.6; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 14pt; } }
+      font-size: 12pt; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 12pt; } }
+      font-size: 10pt; } }
 
 a {
   -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -1442,10 +1442,10 @@ strong, b {
 em, i {
   font-style: italic; }
 
-p {
+p, ul {
   margin: 0 0 1em 0;
-  font-family: Helvetica Neue, sans-serif;
-  line-height: 1.7; }
+  font-family: "proxima-nova", Helvetica Neue, sans-serif;
+  line-height: 1.4; }
 
 h1 {
   font-size: 3em;
@@ -2141,7 +2141,7 @@ button,
   input[type="button"].filter,
   button.filter,
   .button.filter {
-    border-radius: 0 !important;
+    border-radius: 4px !important;
     margin: 0 !important; }
   input[type="submit"].codingpro:hover,
   input[type="reset"].codingpro:hover,
@@ -2160,6 +2160,15 @@ button,
     background-color: #028C00;
     color: white !important;
     box-shadow: inset 0 0 0 2px #028C00 !important; }
+    input[type="submit"].codingpro.on:hover,
+    input[type="reset"].codingpro.on:hover,
+    input[type="button"].codingpro.on:hover,
+    button.codingpro.on:hover,
+    .button.codingpro.on:hover {
+      border-bottom-color: #028C00;
+      background-color: white;
+      color: #028C00 !important;
+      box-shadow: inset 0 0 0 2px #028C00 !important; }
   input[type="submit"].general:hover,
   input[type="reset"].general:hover,
   input[type="button"].general:hover,
@@ -2177,6 +2186,15 @@ button,
     background-color: #efc623;
     color: white !important;
     box-shadow: inset 0 0 0 2px #efc623 !important; }
+    input[type="submit"].general.on:hover,
+    input[type="reset"].general.on:hover,
+    input[type="button"].general.on:hover,
+    button.general.on:hover,
+    .button.general.on:hover {
+      border-bottom-color: #efc623;
+      background-color: white;
+      color: #efc623 !important;
+      box-shadow: inset 0 0 0 2px #efc623 !important; }
   input[type="submit"].algorithm:hover:on,
   input[type="reset"].algorithm:hover:on,
   input[type="button"].algorithm:hover:on,
@@ -2193,22 +2211,41 @@ button,
     border-bottom-color: #A52E2E;
     color: #A52E2E !important;
     box-shadow: inset 0 0 0 2px #A52E2E !important; }
-  input[type="submit"].music:hover,
-  input[type="reset"].music:hover,
-  input[type="button"].music:hover,
-  button.music:hover,
-  .button.music:hover {
-    border-bottom-color: #efc623;
-    color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623 !important; }
-  input[type="submit"].music.on,
-  input[type="reset"].music.on,
-  input[type="button"].music.on,
-  button.music.on,
-  .button.music.on {
-    border-bottom-color: #efc623;
-    color: #efc623 !important;
-    box-shadow: inset 0 0 0 2px #efc623 !important; }
+    input[type="submit"].algorithm.on:hover,
+    input[type="reset"].algorithm.on:hover,
+    input[type="button"].algorithm.on:hover,
+    button.algorithm.on:hover,
+    .button.algorithm.on:hover {
+      border-bottom-color: #A52E2E;
+      background-color: white;
+      color: #efc623 !important;
+      box-shadow: inset 0 0 0 2px #A52E2E !important; }
+  input[type="submit"].data_sciences:hover,
+  input[type="reset"].data_sciences:hover,
+  input[type="button"].data_sciences:hover,
+  button.data_sciences:hover,
+  .button.data_sciences:hover {
+    border-bottom-color: #A52E2E;
+    color: #A52E2E !important;
+    box-shadow: inset 0 0 0 2px #A52E2E !important; }
+  input[type="submit"].data_sciences.on,
+  input[type="reset"].data_sciences.on,
+  input[type="button"].data_sciences.on,
+  button.data_sciences.on,
+  .button.data_sciences.on {
+    border-bottom-color: #A52E2E;
+    background-color: #A52E2E;
+    color: white !important;
+    box-shadow: inset 0 0 0 2px #A52E2E !important; }
+    input[type="submit"].data_sciences.on:hover,
+    input[type="reset"].data_sciences.on:hover,
+    input[type="button"].data_sciences.on:hover,
+    button.data_sciences.on:hover,
+    .button.data_sciences.on:hover {
+      border-bottom-color: #A52E2E;
+      background-color: white;
+      color: #A52E2E !important;
+      box-shadow: inset 0 0 0 2px #A52E2E !important; }
 
 /* Tiles */
 .tiles {
@@ -2287,13 +2324,13 @@ button,
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 40% !important; }
+      height: 60% !important; }
     .tiles article:not(:hover) > .up {
       -moz-transition: height 0.5s ease;
       -webkit-transition: height 0.5s ease;
       -ms-transition: height 0.5s ease;
       transition: height 0.5s ease;
-      height: 60% !important; }
+      height: 40% !important; }
     .tiles article > .image {
       -moz-transition: -moz-transform 0.5s ease;
       -webkit-transition: -webkit-transform 0.5s ease;
@@ -2380,24 +2417,27 @@ button,
       text-align: center;
       text-decoration: none;
       z-index: 3;
-      overflow: auto; }
+      overflow: auto;
+      				/*.content {
+      					@include vendor('transition', (
+      						'max-height 0.5s ease',
+      						'opacity 0.5s ease'
+      					));
+      					width: 100%;
+      					max-height: 0;
+      					line-height: 1.5;
+      					margin-top: 0.35em;
+      					opacity: 0;
+      
+      					> :last-child {
+      						margin-bottom: 0;
+      					}
+      				}*/ }
       .tiles article > a > :last-child {
         margin: 0; }
       .tiles article > a h2 {
         margin: 0;
         letter-spacing: 0em; }
-      .tiles article > a .content {
-        -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-        -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-        -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-        transition: max-height 0.5s ease, opacity 0.5s ease;
-        width: 100%;
-        max-height: 0;
-        line-height: 1.5;
-        margin-top: 0.35em;
-        opacity: 0; }
-        .tiles article > a .content > :last-child {
-          margin-bottom: 0; }
     .tiles article.codingpro > .image:before {
       background-color: white;
       border-bottom: solid 8px #028C00;
@@ -2413,11 +2453,11 @@ button,
       border-bottom: solid 8px #A52E2E;
       border-left: solid 8px #A52E2E;
       border-right: solid 8px #A52E2E; }
-    .tiles article.music > .image:before {
+    .tiles article.data_sciences > .image:before {
       background-color: white;
-      border-bottom: solid 8px #efc623;
-      border-left: solid 8px #efc623;
-      border-right: solid 8px #efc623; }
+      border-bottom: solid 8px #A52E2E;
+      border-left: solid 8px #A52E2E;
+      border-right: solid 8px #A52E2E; }
     body:not(.is-touch) .tiles article:hover .content {
       max-height: 15em;
       opacity: 1; }
