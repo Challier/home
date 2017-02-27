@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "Simple Problems"
-post_title:	  "Cracking the Interview<br/>Short questions to know by heart"
+post_title:	  "Short coding questions to know by heart"
 date:         2017-02-20 09:00:00 +0200
 menu:		  main
 author:       "Victor"
