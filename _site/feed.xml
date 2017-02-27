@@ -4,10 +4,10 @@
     <title>Victor Challier</title>
     <description>I write about Data Sciences, Python, Algorithms &amp; Data Structures. New interview problems and solutions posted every week!
 </description>
-    <link>http://localhost:4000/home/</link>
-    <atom:link href="http://localhost:4000/home/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Feb 2017 15:24:26 +0100</pubDate>
-    <lastBuildDate>Sun, 26 Feb 2017 15:24:26 +0100</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Feb 2017 21:59:27 +0100</pubDate>
+    <lastBuildDate>Mon, 27 Feb 2017 21:59:27 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -111,8 +111,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 23:00:01 +0100</pubDate>
-        <link>http://localhost:4000/home/reddit-NLP/</link>
-        <guid isPermaLink="true">http://localhost:4000/home/reddit-NLP/</guid>
+        <link>http://localhost:4000/reddit-NLP/</link>
+        <guid isPermaLink="true">http://localhost:4000/reddit-NLP/</guid>
         
         <category>coding</category>
         
@@ -230,8 +230,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 23:00:01 +0100</pubDate>
-        <link>http://localhost:4000/home/divisible-subset/</link>
-        <guid isPermaLink="true">http://localhost:4000/home/divisible-subset/</guid>
+        <link>http://localhost:4000/divisible-subset/</link>
+        <guid isPermaLink="true">http://localhost:4000/divisible-subset/</guid>
         
         <category>coding</category>
         
@@ -292,8 +292,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 08:00:00 +0100</pubDate>
-        <link>http://localhost:4000/home/simple-problems/</link>
-        <guid isPermaLink="true">http://localhost:4000/home/simple-problems/</guid>
+        <link>http://localhost:4000/simple-problems/</link>
+        <guid isPermaLink="true">http://localhost:4000/simple-problems/</guid>
         
         <category>coding</category>
         
@@ -396,8 +396,8 @@ Biggest subset size: 8
 
 </description>
         <pubDate>Mon, 20 Feb 2017 08:00:00 +0100</pubDate>
-        <link>http://localhost:4000/home/making-anagrams/</link>
-        <guid isPermaLink="true">http://localhost:4000/home/making-anagrams/</guid>
+        <link>http://localhost:4000/making-anagrams/</link>
+        <guid isPermaLink="true">http://localhost:4000/making-anagrams/</guid>
         
         <category>coding</category>
         
@@ -425,8 +425,8 @@ Hi there! Thanks for stopping by, I hope you’ll enjoy your time on my page! Th
 
 </description>
         <pubDate>Sun, 19 Feb 2017 12:16:44 +0100</pubDate>
-        <link>http://localhost:4000/home/first_post/</link>
-        <guid isPermaLink="true">http://localhost:4000/home/first_post/</guid>
+        <link>http://localhost:4000/first_post/</link>
+        <guid isPermaLink="true">http://localhost:4000/first_post/</guid>
         
         <category>welcome</category>
         
