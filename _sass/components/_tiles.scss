@@ -26,21 +26,24 @@
 			width: calc(#{(100% / 3)} - #{$gutter * 1});
 			margin: $gutter 0 0 $gutter;
 			box-shadow: 0px 2px 10px grey;
+			transition: box-shadow 0.2s ease-in-out;
 
 			&:hover{
+				color: black !important;
+				box-shadow: 0px 2px 10px black;
 
 				> .down{
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 95% !important;
+					height: 70% !important;
 				}
 
 				> .up{
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 5% !important;
+					height: 30% !important;
 				}
 			}
 
@@ -50,14 +53,14 @@
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 60% !important;
+					height: 70% !important;
 				}
 
 				> .up {
 					@include vendor('transition', (
 						'height #{$duration} #{$ease}'
 					));
-					height: 40% !important;
+					height: 30% !important;
 				}
 			}
 
@@ -111,6 +114,11 @@
 				}
 			}
 
+			>h3 {
+				text-align: top left !important;
+				vertical-align: text-top !important;
+			}
+
 			> a {
 				@include vendor('display', 'flex');
 				@include vendor('flex-direction', 'column');
@@ -122,22 +130,17 @@
 				));
 				width: 100%;
 				height: 100%;
-				padding: 1em;
+				padding: 1.5em;
 				border-radius: 0; /*_size(border-radius);*/
 				border-bottom: 0;
-				color: _palette(fg); 
-				text-align: center;
+				text-align: top left !important;
+				vertical-align: text-top !important;
 				text-decoration: none;
 				z-index: 3;
 				overflow:auto;
 
 				> :last-child {
 					margin: 0;
-				}
-
-				h2 {
-					margin: 0;
-					letter-spacing: _font(letter-spacing-box);
 				}
 
 				/*.content {
@@ -200,36 +203,36 @@
 			&.codingpro{
 				> .image:before {
 					background-color: white;
-					border-bottom: solid 8px #028C00;
-					border-left: solid 8px #028C00;
-					border-right: solid 8px #028C00;
+					border-bottom: solid 3px #028C00;
+					border-left: solid 3px #028C00;
+					border-right: solid 3px #028C00;
 				}
 			}
 
 			&.general{
 				> .image:before {
 					background-color: white;
-					border-bottom: solid 8px #fff200;
-					border-left: solid 8px #fff200;
-					border-right: solid 8px #fff200;
+					border-bottom: solid 3px #fff200;
+					border-left: solid 3px #fff200;
+					border-right: solid 3px #fff200;
 				}
 			}
 
 			&.algorithm {
 				> .image:before {
 					background-color: white;
-					border-bottom: solid 8px #A52E2E;
-					border-left: solid 8px #A52E2E;
-					border-right: solid 8px #A52E2E;
+					border-bottom: solid 3px #A52E2E;
+					border-left: solid 3px #A52E2E;
+					border-right: solid 3px #A52E2E;
 				}
 			}
 
 			&.data_sciences {
 				> .image:before {
 					background-color: white;
-					border-bottom: solid 8px #A52E2E;
-					border-left: solid 8px #A52E2E;
-					border-right: solid 8px #A52E2E;
+					border-bottom: solid 3px #A52E2E;
+					border-left: solid 3px #A52E2E;
+					border-right: solid 3px #A52E2E;
 				}
 			}
 
@@ -255,14 +258,14 @@
 			}
 		}
 
-		body.is-touch & {
+		/*body.is-touch & {
 			article {
 				.content {
 					max-height: 15em;
 					opacity: 1;
 				}
 			}
-		}
+		}*/
 
 		@include breakpoint(large) {
 			$gutter: _size(gutter) * 0.5;

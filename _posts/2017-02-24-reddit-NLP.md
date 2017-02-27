@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "Reddit Comment Analysis"
-post_title:	  "Graph Theory and Reddit comments"
+post_title:	  "Graph Theory & Reddit Comments"
 date:         2017-02-21 00:00:01 +0200
 menu:		  main
 author:       "Victor"

@@ -98,6 +98,19 @@
 		}
 	}
 
+	h3 {
+		color: black;
+		font-weight: _font(weight-bold-alt);
+		line-height: 1.5;
+		margin: (_size(element-margin) * 2) 0 (_size(element-margin) * 2) 0;
+		text-transform: uppercase;
+		letter-spacing: _font(letter-spacing);
+
+		a {
+			color: inherit;
+		}
+	}
+
 	h4 {
 		color: black;
 		font-weight: _font(weight-bold-alt);

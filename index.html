@@ -56,15 +56,13 @@ description: >
                 {% else %}
                   {{ post.class | first }}
                 {% endif %}</span>-->
-          <h2 style="font-weight:400;">{{ post.post_title }}</h2>
-          <span>
+          <h4 style="font-weight:400;">{{ post.post_title }}</h4>
+            <p>{{ post.description }}</p>
+          <span style="text-align: right bottom;">
               {% if post.update contains 'yes' %}
               Last update on
               {% endif %}
               {{ post.date | date: "%b %-d, %Y" }}</span>
-          <div class="content">
-            <p>{{ post.description }}</p>
-          </div>
         </a>
       </article>
 
