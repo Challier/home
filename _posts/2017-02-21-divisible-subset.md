@@ -77,7 +77,7 @@ Biggest subset size: 8
     <li> For the numbers where <b>remainders = 0</b>, we can only keep one of them because 0 is the only remainder that can't coexist with zero. Indeed, if we have 0 twice in the final subset, then we can just sum them and get a number divisible by k.</li>
     <li> <b>Remainder = 1</b>. These numbers can't coexist with those where remainder = 3, because 3 + 1 = 4 = k. But there are more threes so let's keep the threes.</li>
     <li> <b>Remainder = 2</b>. They can't coexits with themselves (2 + 2 = 4 = k), so we'll keep only one of them. It is the same logic as in remainder equal to 0.</li>
-    <li> <b>Remainder = 2</b>. They can't coexist with numbers where remainder = 1, but there are more threes than ones so we'll keep them!</li>
+    <li> <b>Remainder = 3</b>. They can't coexist with numbers where remainder = 1, but there are more threes than ones so we'll keep them!</li>
 </ul>
 
 <p>In the end, we have 1 zero, 1 two, and 6 threes. That's 8 elements for the biggest subset, which can be {3, 6, 7, 8, 15, 55, 235, 467} or {3, 6, 7, 12, 15, 55, 235, 467} or {3, 7, 12, 15, 26, 55, 235, 467} depending on the number we choose for remainders zero and two. The code below shows the algorithm implemented. It passes all test cases on Hackerrank. We iterate once over the initial list and once over the dictionary keys so <b>the complexity is O(N)</b>, awesome!</p>
